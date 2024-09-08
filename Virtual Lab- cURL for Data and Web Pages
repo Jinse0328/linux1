@@ -1,0 +1,935 @@
+Last login: Mon Mar 27 15:29:06 on ttys000
+gimjinse-ui-Air:~ jinsekim$ ssh jk1642@iti201-trivedi.comminfo.rutgers.edu
+jk1642@iti201-trivedi.comminfo.rutgers.edu's password: 
+Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.15.0-1031-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Mon Mar 27 20:26:37 UTC 2023
+
+  System load:  0.0                Processes:             146
+  Usage of /:   12.4% of 48.39GB   Users logged in:       8
+  Memory usage: 12%                IPv4 address for ens5: 10.81.64.40
+  Swap usage:   0%
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+69 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+New release '22.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Mon Mar 27 19:33:20 2023 from 108.5.39.174
+jk1642@ip-10-81-64-40:~$ curl https://www.reddit.com/r/netflix
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>302 Found</title>
+  </head>
+  <body>
+    <h1>Error 302 Found</h1>
+    <p>Found</p>
+    <h3>Error 54113</h3>
+    <p>Details: cache-iad-kcgs7200031-IAD 1679948833 1558043592</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
+jk1642@ip-10-81-64-40:~$ curl https://www.reddit.com/r/netflix > netflix.html
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   413  100   413    0     0  22944      0 --:--:-- --:--:-- --:--:-- 22944
+jk1642@ip-10-81-64-40:~$ ls -al
+total 92
+drwxr-xr-x  10 jk1642 users  4096 Mar 27 20:31 .
+drwxr-xr-x 274 root   root  12288 Mar  9 19:26 ..
+-rw-------   1 jk1642 users  5094 Mar  5 19:55 .bash_history
+-rw-r--r--   1 jk1642 users   220 Feb 25  2020 .bash_logout
+-rw-r--r--   1 jk1642 users    23 Mar  5 14:30 .bash_profile
+-rw-r--r--   1 jk1642 users  3771 Feb 25  2020 .bashrc
+drwx------   2 jk1642 users  4096 Jan 24 16:11 .cache
+drwx------   3 jk1642 users  4096 Feb  6 23:31 .config
+drwxr-xr-x   3 jk1642 users  4096 Mar  5 14:29 .local
+-rw-r--r--   1 jk1642 users   807 Feb 25  2020 .profile
+-rw-------   1 jk1642 users  6415 Feb 20 17:14 .viminfo
+-rw-r--r--   1 jk1642 users   176 Jan 30 07:32 .wget-hsts
+drwxr-xr-x   2 jk1642 users  4096 Jan 24 16:20 Sec01
+-rwxr-xr-x   1 jk1642 users   128 Feb 20 08:23 hello.sh
+-rw-r--r--   1 jk1642 users     0 Jan 24 16:26 myfile
+-rw-r--r--   1 jk1642 users     0 Jan 24 16:27 myfile2
+-rw-r--r--   1 jk1642 users   413 Mar 27 20:31 netflix.html
+drwxr-xr-x   2 jk1642 users  4096 Jan 30 01:00 newdir
+-rw-r--r--   1 jk1642 users     0 Jan 30 01:18 newfile.txt
+drwxr-xr-x   2 jk1642 users  4096 Feb 14 02:13 party-plan
+drwxr-xr-x   4 jk1642 users  4096 Jan 30 07:07 placeholders
+drwxr-xr-x   2 jk1642 users  4096 Jan 24 16:35 sec01
+jk1642@ip-10-81-64-40:~$ head netflix.html
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>302 Found</title>
+  </head>
+  <body>
+    <h1>Error 302 Found</h1>
+jk1642@ip-10-81-64-40:~$ ls -al
+total 92
+drwxr-xr-x  10 jk1642 users  4096 Mar 27 20:31 .
+drwxr-xr-x 274 root   root  12288 Mar  9 19:26 ..
+-rw-------   1 jk1642 users  5094 Mar  5 19:55 .bash_history
+-rw-r--r--   1 jk1642 users   220 Feb 25  2020 .bash_logout
+-rw-r--r--   1 jk1642 users    23 Mar  5 14:30 .bash_profile
+-rw-r--r--   1 jk1642 users  3771 Feb 25  2020 .bashrc
+drwx------   2 jk1642 users  4096 Jan 24 16:11 .cache
+drwx------   3 jk1642 users  4096 Feb  6 23:31 .config
+drwxr-xr-x   3 jk1642 users  4096 Mar  5 14:29 .local
+-rw-r--r--   1 jk1642 users   807 Feb 25  2020 .profile
+-rw-------   1 jk1642 users  6415 Feb 20 17:14 .viminfo
+-rw-r--r--   1 jk1642 users   176 Jan 30 07:32 .wget-hsts
+drwxr-xr-x   2 jk1642 users  4096 Jan 24 16:20 Sec01
+-rwxr-xr-x   1 jk1642 users   128 Feb 20 08:23 hello.sh
+-rw-r--r--   1 jk1642 users     0 Jan 24 16:26 myfile
+-rw-r--r--   1 jk1642 users     0 Jan 24 16:27 myfile2
+-rw-r--r--   1 jk1642 users   413 Mar 27 20:31 netflix.html
+drwxr-xr-x   2 jk1642 users  4096 Jan 30 01:00 newdir
+-rw-r--r--   1 jk1642 users     0 Jan 30 01:18 newfile.txt
+drwxr-xr-x   2 jk1642 users  4096 Feb 14 02:13 party-plan
+drwxr-xr-x   4 jk1642 users  4096 Jan 30 07:07 placeholders
+drwxr-xr-x   2 jk1642 users  4096 Jan 24 16:35 sec01
+jk1642@ip-10-81-64-40:~$ curl https://www.reddit.com/r/netflix.json > data.json
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    46  100    46    0     0   1022      0 --:--:-- --:--:-- --:--:--  1022
+jk1642@ip-10-81-64-40:~$ vi data.json
+jk1642@ip-10-81-64-40:~$ more data.json
+{"message": "Too Many Requests", "error": 429}
+jk1642@ip-10-81-64-40:~$ ls
+Sec01  data.json  hello.sh  myfile  myfile2  netflix.html  newdir  newfile.txt	party-plan  placeholders  sec01
+jk1642@ip-10-81-64-40:~$ curl https://www.reddit.com/r/netflix.json > data.json
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  116k  100  116k    0     0  96000      0  0:00:01  0:00:01 --:--:-- 96000
+jk1642@ip-10-81-64-40:~$ more data.json
+{"kind": "Listing", "data": {"after": "t3_121lxm3", "dist": 27, "modhash": "", "geo_filter": null, "children": [{"
+kind": "t3", "data": {"approved_at_utc": null, "subreddit": "netflix", "selftext": "We are pleased to announce we 
+have affiliated with https://discord.gg/Netflix which will be the subreddit Discord server for the Netflix subredd
+it! \n\nFeel free to join the server and talk about everything Netflix related, including shows on Netflix as well
+ :).", "author_fullname": "t2_q5aen", "saved": false, "mod_reason_title": null, "gilded": 0, "clicked": false, "ti
+tle": "/r/Netflix Discord Server", "link_flair_richtext": [], "subreddit_name_prefixed": "r/netflix", "hidden": fa
+lse, "pwls": 6, "link_flair_css_class": "", "downs": 0, "top_awarded_type": null, "hide_score": false, "name": "t3
+_mxm3re", "quarantine": false, "link_flair_text_color": "light", "upvote_ratio": 0.97, "author_flair_background_co
+lor": null, "subreddit_type": "public", "ups": 392, "total_awards_received": 8, "media_embed": {}, "author_flair_t
+emplate_id": null, "is_original_content": false, "user_reports": [], "secure_media": null, "is_reddit_media_domain
+": false, "is_meta": false, "category": null, "secure_media_embed": {}, "link_flair_text": "Announcement", "can_mo
+d_post": false, "score": 392, "approved_by": null, "is_created_from_ads_ui": false, "author_premium": true, "thumb
+nail": "", "edited": 1619278864.0, "author_flair_css_class": null, "author_flair_richtext": [], "gildings": {}, "c
+ontent_categories": null, "is_self": true, "mod_note": null, "created": 1619277844.0, "link_flair_type": "text", "
+wls": 6, "removed_by_category": null, "banned_by": null, "author_flair_type": "text", "domain": "self.netflix", "a
+llow_live_comments": true, "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;We are pleased 
+to announce we have affiliated with &lt;a href=\"https://discord.gg/Netflix\"&gt;https://discord.gg/Netflix&lt;/a&
+gt; which will be the subreddit Discord server for the Netflix subreddit! &lt;/p&gt;\n\n&lt;p&gt;Feel free to join
+ the server and talk about everything Netflix related, including shows on Netflix as well :).&lt;/p&gt;\n&lt;/div&
+gt;&lt;!-- SC_ON --&gt;", "likes": null, "suggested_sort": null, "banned_at_utc": null, "view_count": null, "archi
+ved": false, "no_follow": false, "is_crosspostable": false, "pinned": false, "over_18": false, "all_awardings": [{
+"giver_coin_reward": null, "subreddit_id": null, "is_new": false, "days_of_drip_extension": null, "coin_price": 12
+5, "id": "award_5f123e3d-4f48-42f4-9c11-e98b566d5897", "penny_donate": null, "award_sub_type": "GLOBAL", "coin_rew
+ard": 0, "icon_url": "https://i.redd.it/award_images/t5_22cerq/5izbv4fn0md41_Wholesome.png", "days_of_premium": nu
+ll, "tiers_by_required_awardings": null, "resized_icons": [{"url": "https://preview.redd.it/award_images/t5_22cerq
+/5izbv4fn0md41_Wholesome.png?width=16&amp;height=16&amp;auto=webp&amp;v=enabled&amp;s=082e8a6ce98b1d4a23352a066805
+ad80c4613ef0", "width": 16, "height": 16}, {"url": "https://preview.redd.it/award_images/t5_22cerq/5izbv4fn0md41_W
+holesome.png?width=32&amp;height=32&amp;auto=webp&amp;v=enabled&amp;s=b3a82cbce99aee9ab58568a6deaecfb665b8c23e", "
+width": 32, "height": 32}, {"url": "https://preview.redd.it/award_images/t5_22cerq/5izbv4fn0md41_Wholesome.png?wid
+th=48&amp;height=48&amp;auto=webp&amp;v=enabled&amp;s=2efd28f79c4ecd09f21aa3d215e8581027425ed4", "width": 48, "hei
+ght": 48}, {"url": "https://preview.redd.it/award_images/t5_22cerq/5izbv4fn0md41_Wholesome.png?width=64&amp;height
+=64&amp;auto=webp&amp;v=enabled&amp;s=5a2c69f0958d075865c5ef5de68e6cafdbc8e8b0", "width": 64, "height": 64}, {"url
+": "https://preview.redd.it/award_images/t5_22cerq/5izbv4fn0md41_Wholesome.png?width=128&amp;height=128&amp;auto=w
+ebp&amp;v=enabled&amp;s=3b9381ef976af3298b22fc5103c37e9217c3a50b", "width": 128, "height": 128}], "icon_width": 20
+48, "static_icon_width": 2048, "start_date": null, "is_enabled": true, "awardings_required_to_grant_benefits": nul
+l, "description": "When you come across a feel-good thing.", "end_date": null, "sticky_duration_seconds": null, "s
+ubreddit_coin_reward": 0, "count": 3, "static_icon_height": 2048, "name": "Wholesome", "resized_static_icons": [{"
+url": "https://preview.redd.it/award_images/t5_22cerq/5izbv4fn0md41_Wholesome.png?width=16&amp;height=16&amp;auto=
+webp&amp;v=enabled&amp;s=082e8a6ce98b1d4a23352a066805ad80c4613ef0", "width": 16, "height": 16}, {"url": "https://p
+review.redd.it/award_images/t5_22cerq/5izbv4fn0md41_Wholesome.png?width=32&amp;height=32&amp;auto=webp&amp;v=enabl
+ed&amp;s=b3a82cbce99aee9ab58568a6deaecfb665b8c23e", "width": 32, "height": 32}, {"url": "https://preview.redd.it/a
+ward_images/t5_22cerq/5izbv4fn0md41_Wholesome.png?width=48&amp;height=48&amp;auto=webp&amp;v=enabled&amp;s=2efd28f
+79c4ecd09f21aa3d215e8581027425ed4", "width": 48, "height": 48}, {"url": "https://preview.redd.it/award_images/t5_2
+2cerq/5izbv4fn0md41_Wholesome.png?width=64&amp;height=64&amp;auto=webp&amp;v=enabled&amp;s=5a2c69f0958d075865c5ef5
+de68e6cafdbc8e8b0", "width": 64, "height": 64}, {"url": "https://preview.redd.it/award_images/t5_22cerq/5izbv4fn0m
+d41_Wholesome.png?width=128&amp;height=128&amp;auto=webp&amp;v=enabled&amp;s=3b9381ef976af3298b22fc5103c37e9217c3a
+50b", "width": 128, "height": 128}], "icon_format": null, "icon_height": 2048, "penny_price": null, "award_type": 
+"global", "static_icon_url": "https://i.redd.it/award_images/t5_22cerq/5izbv4fn0md41_Wholesome.png"}, {"giver_coin
+_reward": null, "subreddit_id": null, "is_new": false, "days_of_drip_extension": null, "coin_price": 80, "id": "aw
+ard_8352bdff-3e03-4189-8a08-82501dd8f835", "penny_donate": null, "award_sub_type": "GLOBAL", "coin_reward": 0, "ic
+on_url": "https://i.redd.it/award_images/t5_q0gj4/ks45ij6w05f61_oldHugz.png", "days_of_premium": null, "tiers_by_r
+equired_awardings": null, "resized_icons": [{"url": "https://preview.redd.it/award_images/t5_q0gj4/ks45ij6w05f61_o
+ldHugz.png?width=16&amp;height=16&amp;auto=webp&amp;v=enabled&amp;s=8cd1268b4b0fb062fdbe870b3ca1a06f6777aec1", "wi
+dth": 16, "height": 16}, {"url": "https://preview.redd.it/award_images/t5_q0gj4/ks45ij6w05f61_oldHugz.png?width=32
+&amp;height=32&amp;auto=webp&amp;v=enabled&amp;s=3b126a87e54bfa89ca37ee69117b6bd21d55b5ed", "width": 32, "height":
+ 32}, {"url": "https://preview.redd.it/award_images/t5_q0gj4/ks45ij6w05f61_oldHugz.png?width=48&amp;height=48&amp;
+auto=webp&amp;v=enabled&amp;s=25fff2ab0b86ae225364512343272381a34c9ebe", "width": 48, "height": 48}, {"url": "http
+s://preview.redd.it/award_images/t5_q0gj4/ks45ij6w05f61_oldHugz.png?width=64&amp;height=64&amp;auto=webp&amp;v=ena
+bled&amp;s=eb9cdcdecf1a99563c357d1c7f2d5455706f16ee", "width": 64, "height": 64}, {"url": "https://preview.redd.it
+/award_images/t5_q0gj4/ks45ij6w05f61_oldHugz.png?width=128&amp;height=128&amp;auto=webp&amp;v=enabled&amp;s=da5eed
+894445d6e9a9b309fe4f5f5c6e650e6223", "width": 128, "height": 128}], "icon_width": 2048, "static_icon_width": 2048,
+ "start_date": null, "is_enabled": true, "awardings_required_to_grant_benefits": null, "description": "Everything 
+is better with a good hug", "end_date": null, "sticky_duration_seconds": null, "subreddit_coin_reward": 0, "count"
+: 2, "static_icon_height": 2048, "name": "Hugz", "resized_static_icons": [{"url": "https://preview.redd.it/award_i
+mages/t5_q0gj4/fpm0r5ryq1361_PolarHugs.png?width=16&amp;height=16&amp;auto=webp&amp;v=enabled&amp;s=3cb4219cab49d7
+694cf44adfbdb532afce91f8fb", "width": 16, "height": 16}, {"url": "https://preview.redd.it/award_images/t5_q0gj4/fp
+m0r5ryq1361_PolarHugs.png?width=32&amp;height=32&amp;auto=webp&amp;v=enabled&amp;s=3e1a853e94be133896599beb0999306
+a479f3458", "width": 32, "height": 32}, {"url": "https://preview.redd.it/award_images/t5_q0gj4/fpm0r5ryq1361_Polar
+Hugs.png?width=48&amp;height=48&amp;auto=webp&amp;v=enabled&amp;s=b346e751006a5802e439bd7c2b66918323313956", "widt
+h": 48, "height": 48}, {"url": "https://preview.redd.it/award_images/t5_q0gj4/fpm0r5ryq1361_PolarHugs.png?width=64
+&amp;height=64&amp;auto=webp&amp;v=enabled&amp;s=d13c95fd09848dd97f496fa0f88d49e0d75e8718", "width": 64, "height":
+ 64}, {"url": "https://preview.redd.it/award_images/t5_q0gj4/fpm0r5ryq1361_PolarHugs.png?width=128&amp;height=128&
+amp;auto=webp&amp;v=enabled&amp;s=55449913c7a32958f202c491c1bcf4ed5f812f37", "width": 128, "height": 128}], "icon_
+format": "PNG", "icon_height": 2048, "penny_price": 0, "award_type": "global", "static_icon_url": "https://i.redd.
+it/award_images/t5_q0gj4/fpm0r5ryq1361_PolarHugs.png"}, {"giver_coin_reward": null, "subreddit_id": null, "is_new"
+: false, "days_of_drip_extension": null, "coin_price": 150, "id": "award_f44611f1-b89e-46dc-97fe-892280b13b82", "p
+enny_donate": null, "award_sub_type": "GLOBAL", "coin_reward": 0, "icon_url": "https://i.redd.it/award_images/t5_2
+2cerq/klvxk1wggfd41_Helpful.png", "days_of_premium": null, "tiers_by_required_awardings": null, "resized_icons": [
+{"url": "https://preview.redd.it/award_images/t5_22cerq/klvxk1wggfd41_Helpful.png?width=16&amp;height=16&amp;auto=
+webp&amp;v=enabled&amp;s=c670b7d7bc99c03bffde92706ad5ceeda12658f3", "width": 16, "height": 16}, {"url": "https://p
+review.redd.it/award_images/t5_22cerq/klvxk1wggfd41_Helpful.png?width=32&amp;height=32&amp;auto=webp&amp;v=enabled
+&amp;s=63a498673bd4a518a031783179a767cc4135d5f5", "width": 32, "height": 32}, {"url": "https://preview.redd.it/awa
+rd_images/t5_22cerq/klvxk1wggfd41_Helpful.png?width=48&amp;height=48&amp;auto=webp&amp;v=enabled&amp;s=e8802df4796
+5bd66370b72ac3cb7639e9eae92ae", "width": 48, "height": 48}, {"url": "https://preview.redd.it/award_images/t5_22cer
+q/klvxk1wggfd41_Helpful.png?width=64&amp;height=64&amp;auto=webp&amp;v=enabled&amp;s=fc40ae1c1a18193f190da70a2748d
+0a48c17a5a9", "width": 64, "height": 64}, {"url": "https://preview.redd.it/award_images/t5_22cerq/klvxk1wggfd41_He
+lpful.png?width=128&amp;height=128&amp;auto=webp&amp;v=enabled&amp;s=77ba4d8e862ca183dd8c09e002fd123a6b2f52f5", "w
+idth": 128, "height": 128}], "icon_width": 2048, "static_icon_width": 2048, "start_date": null, "is_enabled": true
+, "awardings_required_to_grant_benefits": null, "description": "Thank you stranger. Shows the award.", "end_date":
+ null, "sticky_duration_seconds": null, "subreddit_coin_reward": 0, "count": 3, "static_icon_height": 2048, "name"
+: "Helpful", "resized_static_icons": [{"url": "https://preview.redd.it/award_images/t5_22cerq/klvxk1wggfd41_Helpfu
+l.png?width=16&amp;height=16&amp;auto=webp&amp;v=enabled&amp;s=c670b7d7bc99c03bffde92706ad5ceeda12658f3", "width":
+ 16, "height": 16}, {"url": "https://preview.redd.it/award_images/t5_22cerq/klvxk1wggfd41_Helpful.png?width=32&amp
+;height=32&amp;auto=webp&amp;v=enabled&amp;s=63a498673bd4a518a031783179a767cc4135d5f5", "width": 32, "height": 32}
+, {"url": "https://preview.redd.it/award_images/t5_22cerq/klvxk1wggfd41_Helpful.png?width=48&amp;height=48&amp;aut
+o=webp&amp;v=enabled&amp;s=e8802df47965bd66370b72ac3cb7639e9eae92ae", "width": 48, "height": 48}, {"url": "https:/
+/preview.redd.it/award_images/t5_22cerq/klvxk1wggfd41_Helpful.png?width=64&amp;height=64&amp;auto=webp&amp;v=enabl
+ed&amp;s=fc40ae1c1a18193f190da70a2748d0a48c17a5a9", "width": 64, "height": 64}, {"url": "https://preview.redd.it/a
+ward_images/t5_22cerq/klvxk1wggfd41_Helpful.png?width=128&amp;height=128&amp;auto=webp&amp;v=enabled&amp;s=77ba4d8
+e862ca183dd8c09e002fd123a6b2f52f5", "width": 128, "height": 128}], "icon_format": null, "icon_height": 2048, "penn
+y_price": null, "award_type": "global", "static_icon_url": "https://i.redd.it/award_images/t5_22cerq/klvxk1wggfd41
+_Helpful.png"}], "awarders": [], "media_only": false, "link_flair_template_id": "2ee0fcfe-9bc1-11eb-9a45-0ef8b5fe0
+0f5", "can_gild": false, "spoiler": false, "locked": false, "author_flair_text": null, "treatment_tags": [], "visi
+ted": false, "removed_by": null, "num_reports": null, "distinguished": "moderator", "subreddit_id": "t5_2qoxj", "a
+uthor_is_blocked": false, "mod_reason_by": null, "removal_reason": null, "link_flair_background_color": "#0079d3",
+ "id": "mxm3re", "is_robot_indexable": true, "report_reasons": null, "author": "N3DSdude", "discussion_type": null
+, "num_comments": 160, "send_replies": true, "whitelist_status": "all_ads", "contest_mode": false, "mod_reports": 
+[], "author_patreon_flair": false, "author_flair_text_color": null, "permalink": "/r/netflix/comments/mxm3re/rnetf
+lix_discord_server/", "parent_whitelist_status": "all_ads", "stickied": true, "url": "https://www.reddit.com/r/net
+flix/comments/mxm3re/rnetflix_discord_server/", "subreddit_subscribers": 1576912, "created_utc": 1619277844.0, "nu
+m_crossposts": 0, "media": null, "is_video": false}}, {"kind": "t3", "data": {"approved_at_utc": null, "subreddit"
+: "netflix", "selftext": "", "user_reports": [], "saved": false, "mod_reason_title": null, "gilded": 0, "clicked":
+ false, "title": "Hello! I am Ben Barnes from Netflix's SHADOW AND BONE. Season 2 premieres March 16. Ask me anyth
+ing!", "link_flair_richtext": [], "subreddit_name_prefixed": "r/netflix", "hidden": false, "pwls": 6, "link_flair_
+css_class": null, "downs": 0, "top_awarded_type": null, "hide_score": false, "name": "t3_11qfpvd", "quarantine": f
+alse, "link_flair_text_color": "dark", "upvote_ratio": 0.88, "author_flair_background_color": null, "subreddit_typ
+e": "public", "ups": 54, "total_awards_received": 0, "media_embed": {}, "author_flair_template_id": null, "is_orig
+inal_content": false, "author_fullname": "t2_ascrgnbz", "secure_media": null, "is_reddit_media_domain": false, "is
+_meta": false, "category": null, "secure_media_embed": {}, "link_flair_text": null, "can_mod_post": false, "score"
+: 54, "approved_by": null, "is_created_from_ads_ui": false, "author_premium": false, "thumbnail": "", "edited": fa
+lse, "author_flair_css_class": null, "author_flair_richtext": [], "gildings": {}, "content_categories": null, "is_
+self": false, "mod_note": null, "crosspost_parent_list": [{"approved_at_utc": null, "subreddit": "television", "se
+lftext": "Hey Reddit! I'm Ben Barnes and I play General Kirigan on Netflix's Shadow and Bone. You can catch up on 
+season one now AND don't miss season 2 when it premieres globally on Thursday, March 16. You won't want to miss th
+e Darkling drama. \n\nCHECK OUT THE SHADOW \uff06 BONE S2 TRAILER: [https://youtu.be/0dOmcdz-PN0]( https://youtu.b
+e/0dOmcdz-PN0)\nCATCH ME ON INSTAGRAM: [https://www.instagram.com/benbarnes/](https://www.instagram.com/benbarnes/
+)\n\nPROOF: https://i.redd.it/viqveot700na1.jpg\n\nThank you for your questions! This AMA is now over. Watch SHADO
+W &amp; BONE SEASON 2 on Netflix Thursday, March 16.", "author_fullname": "t2_3cpw5xub", "saved": false, "mod_reas
+on_title": null, "gilded": 0, "clicked": false, "title": "Hello! I am Ben Barnes from Netflix's SHADOW AND BONE. S
+eason 2 premieres March 16. Ask me anything!", "link_flair_richtext": [], "subreddit_name_prefixed": "r/television
+", "hidden": false, "pwls": 6, "link_flair_css_class": "official", "downs": 0, "top_awarded_type": null, "hide_sco
+re": false, "name": "t3_11qfjtk", "quarantine": false, "link_flair_text_color": "dark", "upvote_ratio": 0.95, "aut
+hor_flair_background_color": null, "subreddit_type": "public", "ups": 2174, "total_awards_received": 0, "media_emb
+ed": {}, "author_flair_template_id": null, "is_original_content": false, "user_reports": [], "secure_media": null,
+ "is_reddit_media_domain": false, "is_meta": false, "category": null, "secure_media_embed": {}, "link_flair_text":
+ "AMA ", "can_mod_post": false, "score": 2174, "approved_by": null, "is_created_from_ads_ui": false, "author_premi
+um": false, "thumbnail": "", "edited": 1678734245.0, "author_flair_css_class": null, "author_flair_richtext": [], 
+"gildings": {}, "content_categories": null, "is_self": true, "mod_note": null, "created": 1678727904.0, "link_flai
+r_type": "text", "wls": 6, "removed_by_category": null, "banned_by": null, "author_flair_type": "text", "domain": 
+"self.television", "allow_live_comments": true, "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt
+;p&gt;Hey Reddit! I&amp;#39;m Ben Barnes and I play General Kirigan on Netflix&amp;#39;s Shadow and Bone. You can 
+catch up on season one now AND don&amp;#39;t miss season 2 when it premieres globally on Thursday, March 16. You w
+on&amp;#39;t want to miss the Darkling drama. &lt;/p&gt;\n\n&lt;p&gt;CHECK OUT THE SHADOW \uff06 BONE S2 TRAILER: 
+&lt;a href=\"https://youtu.be/0dOmcdz-PN0\"&gt;https://youtu.be/0dOmcdz-PN0&lt;/a&gt;\nCATCH ME ON INSTAGRAM: &lt;
+a href=\"https://www.instagram.com/benbarnes/\"&gt;https://www.instagram.com/benbarnes/&lt;/a&gt;&lt;/p&gt;\n\n&lt
+;p&gt;PROOF: &lt;a href=\"https://i.redd.it/viqveot700na1.jpg\"&gt;https://i.redd.it/viqveot700na1.jpg&lt;/a&gt;&l
+t;/p&gt;\n\n&lt;p&gt;Thank you for your questions! This AMA is now over. Watch SHADOW &amp;amp; BONE SEASON 2 on N
+etflix Thursday, March 16.&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "likes": null, "suggested_sort": "qa", "b
+anned_at_utc": null, "view_count": null, "archived": false, "no_follow": false, "is_crosspostable": false, "pinned
+": false, "over_18": false, "all_awardings": [], "awarders": [], "media_only": false, "link_flair_template_id": "c
+49256d0-739a-11ea-89e8-0e0a8058803f", "can_gild": false, "spoiler": false, "locked": false, "author_flair_text": n
+ull, "treatment_tags": [], "visited": false, "removed_by": null, "num_reports": null, "distinguished": null, "subr
+eddit_id": "t5_2qh6e", "author_is_blocked": false, "mod_reason_by": null, "removal_reason": null, "link_flair_back
+ground_color": "#ffb000", "id": "11qfjtk", "is_robot_indexable": true, "report_reasons": null, "author": "netflix"
+, "discussion_type": null, "num_comments": 1514, "send_replies": false, "whitelist_status": "all_ads", "contest_mo
+de": false, "mod_reports": [], "author_patreon_flair": false, "author_flair_text_color": null, "permalink": "/r/te
+levision/comments/11qfjtk/hello_i_am_ben_barnes_from_netflixs_shadow_and/", "parent_whitelist_status": "all_ads", 
+"stickied": false, "url": "https://www.reddit.com/r/television/comments/11qfjtk/hello_i_am_ben_barnes_from_netflix
+s_shadow_and/", "subreddit_subscribers": 16752831, "created_utc": 1678727904.0, "num_crossposts": 6, "media": null
+, "is_video": false}], "created": 1678728295.0, "link_flair_type": "text", "wls": 6, "removed_by_category": null, 
+"banned_by": null, "author_flair_type": "text", "domain": "self.television", "allow_live_comments": false, "selfte
+xt_html": null, "likes": null, "suggested_sort": null, "banned_at_utc": null, "url_overridden_by_dest": "/r/televi
+sion/comments/11qfjtk/hello_i_am_ben_barnes_from_netflixs_shadow_and/", "view_count": null, "archived": false, "no
+_follow": false, "is_crosspostable": false, "pinned": false, "over_18": false, "all_awardings": [], "awarders": []
+, "media_only": false, "can_gild": false, "spoiler": false, "locked": false, "author_flair_text": null, "treatment
+_tags": [], "visited": false, "removed_by": null, "num_reports": null, "distinguished": null, "subreddit_id": "t5_
+2qoxj", "author_is_blocked": false, "mod_reason_by": null, "removal_reason": null, "link_flair_background_color": 
+"", "id": "11qfpvd", "is_robot_indexable": true, "report_reasons": null, "author": "cryfi", "discussion_type": nul
+l, "num_comments": 4, "send_replies": false, "whitelist_status": "all_ads", "contest_mode": false, "mod_reports": 
+[], "author_patreon_flair": false, "crosspost_parent": "t3_11qfjtk", "author_flair_text_color": null, "permalink":
+ "/r/netflix/comments/11qfpvd/hello_i_am_ben_barnes_from_netflixs_shadow_and/", "parent_whitelist_status": "all_ad
+s", "stickied": true, "url": "/r/television/comments/11qfjtk/hello_i_am_ben_barnes_from_netflixs_shadow_and/", "su
+breddit_subscribers": 1576912, "created_utc": 1678728295.0, "num_crossposts": 0, "media": null, "is_video": false}
+}, {"kind": "t3", "data": {"approved_at_utc": null, "subreddit": "netflix", "selftext": "I've been trying to look 
+for new shows to watch on Netflix, but everything is just so depressing to me. It seems like a huge majority of th
+eir content has to do with documentaries on serial killers. It almost seems exploitative. One of their newest movi
+es, the pornhub doc gets advertised everywhere. Even their fictional content is tied around themes like such as Yo
+u. I'm not a prude, I genuinely just want to tune into a funny program or something I can turn my brain off to eve
+ry night. I don't want to go to sleep to hearing about how some mass murder killed a dozen women or some Love Isla
+nd bullshit.", "author_fullname": "t2_kb9r6", "saved": false, "mod_reason_title": null, "gilded": 0, "clicked": fa
+lse, "title": "Is it me or is an overwhelming amount of Netflix content based around murders and sex?", "link_flai
+r_richtext": [], "subreddit_name_prefixed": "r/netflix", "hidden": false, "pwls": 6, "link_flair_css_class": null,
+ "downs": 0, "top_awarded_type": null, "hide_score": false, "name": "t3_12385s8", "quarantine": false, "link_flair
+_text_color": "dark", "upvote_ratio": 0.87, "author_flair_background_color": null, "subreddit_type": "public", "up
+s": 653, "total_awards_received": 0, "media_embed": {}, "author_flair_template_id": null, "is_original_content": f
+alse, "user_reports": [], "secure_media": null, "is_reddit_media_domain": false, "is_meta": false, "category": nul
+l, "secure_media_embed": {}, "link_flair_text": null, "can_mod_post": false, "score": 653, "approved_by": null, "i
+s_created_from_ads_ui": false, "author_premium": false, "thumbnail": "", "edited": false, "author_flair_css_class"
+: null, "author_flair_richtext": [], "gildings": {}, "content_categories": null, "is_self": true, "mod_note": null
+, "created": 1679883667.0, "link_flair_type": "text", "wls": 6, "removed_by_category": null, "banned_by": null, "a
+uthor_flair_type": "text", "domain": "self.netflix", "allow_live_comments": true, "selftext_html": "&lt;!-- SC_OFF
+ --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;I&amp;#39;ve been trying to look for new shows to watch on Netflix, but ev
+erything is just so depressing to me. It seems like a huge majority of their content has to do with documentaries 
+on serial killers. It almost seems exploitative. One of their newest movies, the pornhub doc gets advertised every
+where. Even their fictional content is tied around themes like such as You. I&amp;#39;m not a prude, I genuinely j
+ust want to tune into a funny program or something I can turn my brain off to every night. I don&amp;#39;t want to
+ go to sleep to hearing about how some mass murder killed a dozen women or some Love Island bullshit.&lt;/p&gt;\n&
+lt;/div&gt;&lt;!-- SC_ON --&gt;", "likes": null, "suggested_sort": null, "banned_at_utc": null, "view_count": null
+, "archived": false, "no_follow": false, "is_crosspostable": false, "pinned": false, "over_18": false, "all_awardi
+ngs": [], "awarders": [], "media_only": false, "can_gild": false, "spoiler": false, "locked": false, "author_flair
+_text": null, "treatment_tags": [], "visited": false, "removed_by": null, "num_reports": null, "distinguished": nu
+ll, "subreddit_id": "t5_2qoxj", "author_is_blocked": false, "mod_reason_by": null, "removal_reason": null, "link_f
+lair_background_color": "", "id": "12385s8", "is_robot_indexable": true, "report_reasons": null, "author": "Tekl",
+ "discussion_type": null, "num_comments": 168, "send_replies": true, "whitelist_status": "all_ads", "contest_mode"
+: false, "mod_reports": [], "author_patreon_flair": false, "author_flair_text_color": null, "permalink": "/r/netfl
+ix/comments/12385s8/is_it_me_or_is_an_overwhelming_amount_of_netflix/", "parent_whitelist_status": "all_ads", "sti
+ckied": false, "url": "https://www.reddit.com/r/netflix/comments/12385s8/is_it_me_or_is_an_overwhelming_amount_of_
+netflix/", "subreddit_subscribers": 1576912, "created_utc": 1679883667.0, "num_crossposts": 0, "media": null, "is_
+video": false}}, {"kind": "t3", "data": {"approved_at_utc": null, "subreddit": "netflix", "selftext": "", "author_
+fullname": "t2_5lzl17hr", "saved": false, "mod_reason_title": null, "gilded": 0, "clicked": false, "title": "\u201
+8Game of Thrones\u2019 Alum Lena Headey to Star in Kurt Sutter\u2019s Netflix Western Series \u2018The Abandons\u2
+019", "link_flair_richtext": [], "subreddit_name_prefixed": "r/netflix", "hidden": false, "pwls": 6, "link_flair_c
+ss_class": null, "downs": 0, "top_awarded_type": null, "hide_score": false, "name": "t3_123uy10", "quarantine": fa
+lse, "link_flair_text_color": "dark", "upvote_ratio": 0.85, "author_flair_background_color": null, "subreddit_type
+": "public", "ups": 26, "total_awards_received": 0, "media_embed": {}, "author_flair_template_id": null, "is_origi
+nal_content": false, "user_reports": [], "secure_media": null, "is_reddit_media_domain": false, "is_meta": false, 
+"category": null, "secure_media_embed": {}, "link_flair_text": null, "can_mod_post": false, "score": 26, "approved
+_by": null, "is_created_from_ads_ui": false, "author_premium": true, "thumbnail": "", "edited": false, "author_fla
+ir_css_class": null, "author_flair_richtext": [], "gildings": {}, "content_categories": null, "is_self": false, "m
+od_note": null, "created": 1679940064.0, "link_flair_type": "text", "wls": 6, "removed_by_category": null, "banned
+_by": null, "author_flair_type": "text", "domain": "variety.com", "allow_live_comments": false, "selftext_html": n
+ull, "likes": null, "suggested_sort": null, "banned_at_utc": null, "url_overridden_by_dest": "https://variety.com/
+2023/tv/news/game-of-thrones-lena-headey-kurt-sutter-netflix-western-series-the-abandons-1235565485/", "view_count
+": null, "archived": false, "no_follow": false, "is_crosspostable": false, "pinned": false, "over_18": false, "all
+_awardings": [], "awarders": [], "media_only": false, "can_gild": false, "spoiler": false, "locked": false, "autho
+r_flair_text": null, "treatment_tags": [], "visited": false, "removed_by": null, "num_reports": null, "distinguish
+ed": null, "subreddit_id": "t5_2qoxj", "author_is_blocked": false, "mod_reason_by": null, "removal_reason": null, 
+"link_flair_background_color": "", "id": "123uy10", "is_robot_indexable": true, "report_reasons": null, "author": 
+"misana123", "discussion_type": null, "num_comments": 2, "send_replies": false, "whitelist_status": "all_ads", "co
+ntest_mode": false, "mod_reports": [], "author_patreon_flair": false, "author_flair_text_color": null, "permalink"
+: "/r/netflix/comments/123uy10/game_of_thrones_alum_lena_headey_to_star_in_kurt/", "parent_whitelist_status": "all
+_ads", "stickied": false, "url": "https://variety.com/2023/tv/news/game-of-thrones-lena-headey-kurt-sutter-netflix
+-western-series-the-abandons-1235565485/", "subreddit_subscribers": 1576912, "created_utc": 1679940064.0, "num_cro
+ssposts": 0, "media": null, "is_video": false}}, {"kind": "t3", "data": {"approved_at_utc": null, "subreddit": "ne
+tflix", "selftext": "I'd like to be able to filter out all the foreign language dubbed films that have seemed to r
+ecently flood Netflix. The lips not matching the voice drives me crazy for some reason.", "author_fullname": "t2_s
+uaut", "saved": false, "mod_reason_title": null, "gilded": 0, "clicked": false, "title": "Is there a way to filter
+ out certain content?", "link_flair_richtext": [], "subreddit_name_prefixed": "r/netflix", "hidden": false, "pwls"
+: 6, "link_flair_css_class": null, "downs": 0, "top_awarded_type": null, "hide_score": false, "name": "t3_123p836"
+, "quarantine": false, "link_flair_text_color": "dark", "upvote_ratio": 0.75, "author_flair_background_color": nul
+l, "subreddit_type": "public", "ups": 12, "total_awards_received": 0, "media_embed": {}, "author_flair_template_id
+": null, "is_original_content": false, "user_reports": [], "secure_media": null, "is_reddit_media_domain": false, 
+"is_meta": false, "category": null, "secure_media_embed": {}, "link_flair_text": null, "can_mod_post": false, "sco
+re": 12, "approved_by": null, "is_created_from_ads_ui": false, "author_premium": false, "thumbnail": "", "edited":
+ false, "author_flair_css_class": null, "author_flair_richtext": [], "gildings": {}, "content_categories": null, "
+is_self": true, "mod_note": null, "created": 1679928798.0, "link_flair_type": "text", "wls": 6, "removed_by_catego
+ry": null, "banned_by": null, "author_flair_type": "text", "domain": "self.netflix", "allow_live_comments": true, 
+"selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;I&amp;#39;d like to be able to filter out 
+all the foreign language dubbed films that have seemed to recently flood Netflix. The lips not matching the voice 
+drives me crazy for some reason.&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "likes": null, "suggested_sort": nu
+ll, "banned_at_utc": null, "view_count": null, "archived": false, "no_follow": false, "is_crosspostable": false, "
+pinned": false, "over_18": false, "all_awardings": [], "awarders": [], "media_only": false, "can_gild": false, "sp
+oiler": false, "locked": false, "author_flair_text": null, "treatment_tags": [], "visited": false, "removed_by": n
+ull, "num_reports": null, "distinguished": null, "subreddit_id": "t5_2qoxj", "author_is_blocked": false, "mod_reas
+on_by": null, "removal_reason": null, "link_flair_background_color": "", "id": "123p836", "is_robot_indexable": tr
+ue, "report_reasons": null, "author": "Heismanziel2", "discussion_type": null, "num_comments": 11, "send_replies":
+ true, "whitelist_status": "all_ads", "contest_mode": false, "mod_reports": [], "author_patreon_flair": false, "au
+thor_flair_text_color": null, "permalink": "/r/netflix/comments/123p836/is_there_a_way_to_filter_out_certain_conte
+nt/", "parent_whitelist_status": "all_ads", "stickied": false, "url": "https://www.reddit.com/r/netflix/comments/1
+23p836/is_there_a_way_to_filter_out_certain_content/", "subreddit_subscribers": 1576912, "created_utc": 1679928798
+.0, "num_crossposts": 0, "media": null, "is_video": false}}, {"kind": "t3", "data": {"approved_at_utc": null, "sub
+reddit": "netflix", "selftext": " My dad was the \"main profile\" so it literally doesn't give me the option to de
+lete anway. Its kind of interesting seeing his continue watching before he passed. He never finished Manifest or S
+quid Games.", "author_fullname": "t2_308y7n3v", "saved": false, "mod_reason_title": null, "gilded": 0, "clicked": 
+false, "title": "When someone dies would you delete their netflix profile", "link_flair_richtext": [], "subreddit_
+name_prefixed": "r/netflix", "hidden": false, "pwls": 6, "link_flair_css_class": null, "downs": 0, "top_awarded_ty
+pe": null, "hide_score": false, "name": "t3_122yphr", "quarantine": false, "link_flair_text_color": "dark", "upvot
+e_ratio": 0.93, "author_flair_background_color": null, "subreddit_type": "public", "ups": 306, "total_awards_recei
+ved": 0, "media_embed": {}, "author_flair_template_id": null, "is_original_content": false, "user_reports": [], "s
+ecure_media": null, "is_reddit_media_domain": false, "is_meta": false, "category": null, "secure_media_embed": {},
+ "link_flair_text": null, "can_mod_post": false, "score": 306, "approved_by": null, "is_created_from_ads_ui": fals
+e, "author_premium": false, "thumbnail": "", "edited": 1679880461.0, "author_flair_css_class": null, "author_flair
+_richtext": [], "gildings": {}, "content_categories": null, "is_self": true, "mod_note": null, "created": 16798629
+57.0, "link_flair_type": "text", "wls": 6, "removed_by_category": null, "banned_by": null, "author_flair_type": "t
+ext", "domain": "self.netflix", "allow_live_comments": false, "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class
+=\"md\"&gt;&lt;p&gt;My dad was the &amp;quot;main profile&amp;quot; so it literally doesn&amp;#39;t give me the op
+tion to delete anway. Its kind of interesting seeing his continue watching before he passed. He never finished Man
+ifest or Squid Games.&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "likes": null, "suggested_sort": null, "banned
+_at_utc": null, "view_count": null, "archived": false, "no_follow": false, "is_crosspostable": false, "pinned": fa
+lse, "over_18": false, "all_awardings": [], "awarders": [], "media_only": false, "can_gild": false, "spoiler": fal
+se, "locked": false, "author_flair_text": null, "treatment_tags": [], "visited": false, "removed_by": null, "num_r
+eports": null, "distinguished": null, "subreddit_id": "t5_2qoxj", "author_is_blocked": false, "mod_reason_by": nul
+l, "removal_reason": null, "link_flair_background_color": "", "id": "122yphr", "is_robot_indexable": true, "report
+_reasons": null, "author": "Bloxicorn", "discussion_type": null, "num_comments": 78, "send_replies": true, "whitel
+ist_status": "all_ads", "contest_mode": false, "mod_reports": [], "author_patreon_flair": false, "author_flair_tex
+t_color": null, "permalink": "/r/netflix/comments/122yphr/when_someone_dies_would_you_delete_their_netflix/", "par
+ent_whitelist_status": "all_ads", "stickied": false, "url": "https://www.reddit.com/r/netflix/comments/122yphr/whe
+n_someone_dies_would_you_delete_their_netflix/", "subreddit_subscribers": 1576912, "created_utc": 1679862957.0, "n
+um_crossposts": 0, "media": null, "is_video": false}}, {"kind": "t3", "data": {"approved_at_utc": null, "subreddit
+": "netflix", "selftext": "I can't NOT finish the season while this close.", "author_fullname": "t2_7tb2bufi", "sa
+ved": false, "mod_reason_title": null, "gilded": 0, "clicked": false, "title": "Netflix and insomnia", "link_flair
+_richtext": [], "subreddit_name_prefixed": "r/netflix", "hidden": false, "pwls": 6, "link_flair_css_class": null, 
+"downs": 0, "top_awarded_type": null, "hide_score": false, "name": "t3_122bg87", "quarantine": false, "link_flair_
+text_color": "dark", "upvote_ratio": 0.95, "author_flair_background_color": null, "subreddit_type": "public", "ups
+": 1347, "total_awards_received": 0, "media_embed": {}, "author_flair_template_id": null, "is_original_content": f
+alse, "user_reports": [], "secure_media": {"reddit_video": {"bitrate_kbps": 1200, "fallback_url": "https://v.redd.
+it/araj0fa6l0qa1/DASH_480.mp4?source=fallback", "height": 480, "width": 642, "scrubber_media_url": "https://v.redd
+.it/araj0fa6l0qa1/DASH_96.mp4", "dash_url": "https://v.redd.it/araj0fa6l0qa1/DASHPlaylist.mpd?a=1682541652%2CNTc1N
+WU0ZDMxZWFkZjkzZjUzMzk4NDRmMWFiZDZlOTMyZTgyMDk2YTM5ODExMDA0Y2Y4YzY3YjljNGY1MzgxZA%3D%3D&amp;v=1&amp;f=sd", "durati
+on": 7, "hls_url": "https://v.redd.it/araj0fa6l0qa1/HLSPlaylist.m3u8?a=1682541652%2CNjY5N2U3ZGQxNGZiMTgzZTc2NjM3NT
+AzMDc2ZmE5ZmRiZmQ3ZDg3YjE1NTBmZThhNTI1MDkyNjFmNWNiZTAzMQ%3D%3D&amp;v=1&amp;f=sd", "is_gif": false, "transcoding_st
+atus": "completed"}}, "is_reddit_media_domain": true, "is_meta": false, "category": null, "secure_media_embed": {}
+, "link_flair_text": null, "can_mod_post": false, "score": 1347, "approved_by": null, "is_created_from_ads_ui": fa
+lse, "author_premium": false, "thumbnail": "", "edited": false, "author_flair_css_class": null, "author_flair_rich
+text": [], "gildings": {}, "content_categories": null, "is_self": false, "mod_note": null, "created": 1679806343.0
+, "link_flair_type": "text", "wls": 6, "removed_by_category": null, "banned_by": null, "author_flair_type": "text"
+, "domain": "v.redd.it", "allow_live_comments": true, "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&
+gt;&lt;p&gt;I can&amp;#39;t NOT finish the season while this close.&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", 
+"likes": null, "suggested_sort": null, "banned_at_utc": null, "url_overridden_by_dest": "https://v.redd.it/araj0fa
+6l0qa1", "view_count": null, "archived": false, "no_follow": false, "is_crosspostable": false, "pinned": false, "o
+ver_18": false, "all_awardings": [], "awarders": [], "media_only": false, "can_gild": false, "spoiler": false, "lo
+cked": false, "author_flair_text": null, "treatment_tags": [], "visited": false, "removed_by": null, "num_reports"
+: null, "distinguished": null, "subreddit_id": "t5_2qoxj", "author_is_blocked": false, "mod_reason_by": null, "rem
+oval_reason": null, "link_flair_background_color": "", "id": "122bg87", "is_robot_indexable": true, "report_reason
+s": null, "author": "ctubby766", "discussion_type": null, "num_comments": 35, "send_replies": true, "whitelist_sta
+tus": "all_ads", "contest_mode": false, "mod_reports": [], "author_patreon_flair": false, "author_flair_text_color
+": null, "permalink": "/r/netflix/comments/122bg87/netflix_and_insomnia/", "parent_whitelist_status": "all_ads", "
+stickied": false, "url": "https://v.redd.it/araj0fa6l0qa1", "subreddit_subscribers": 1576912, "created_utc": 16798
+06343.0, "num_crossposts": 0, "media": {"reddit_video": {"bitrate_kbps": 1200, "fallback_url": "https://v.redd.it/
+araj0fa6l0qa1/DASH_480.mp4?source=fallback", "height": 480, "width": 642, "scrubber_media_url": "https://v.redd.it
+/araj0fa6l0qa1/DASH_96.mp4", "dash_url": "https://v.redd.it/araj0fa6l0qa1/DASHPlaylist.mpd?a=1682541652%2CNTc1NWU0
+ZDMxZWFkZjkzZjUzMzk4NDRmMWFiZDZlOTMyZTgyMDk2YTM5ODExMDA0Y2Y4YzY3YjljNGY1MzgxZA%3D%3D&amp;v=1&amp;f=sd", "duration"
+: 7, "hls_url": "https://v.redd.it/araj0fa6l0qa1/HLSPlaylist.m3u8?a=1682541652%2CNjY5N2U3ZGQxNGZiMTgzZTc2NjM3NTAzM
+Dc2ZmE5ZmRiZmQ3ZDg3YjE1NTBmZThhNTI1MDkyNjFmNWNiZTAzMQ%3D%3D&amp;v=1&amp;f=sd", "is_gif": false, "transcoding_statu
+s": "completed"}}, "is_video": true}}, {"kind": "t3", "data": {"approved_at_utc": null, "subreddit": "netflix", "s
+elftext": "r/netflix trying to set up netflix for the first time and every time i reach to the last step it keeps 
+saying \"There was an error processing your payment information. Please check that all fields are filled out corre
+ctly and try again.\" when i enter my debit card details and clicking \"start paid membership\"? tf wrong with net
+flix? i also tried switching emails to see if it was an email problem but nope.", "author_fullname": "t2_lmum7oh1"
+, "saved": false, "mod_reason_title": null, "gilded": 0, "clicked": false, "title": "\"There was an error processi
+ng your payment information. Please check that all fields are filled out correctly and try again.\" SOMEONE HELP!"
+, "link_flair_richtext": [], "subreddit_name_prefixed": "r/netflix", "hidden": false, "pwls": 6, "link_flair_css_c
+lass": null, "downs": 0, "top_awarded_type": null, "hide_score": false, "name": "t3_123vmp1", "quarantine": false,
+ "link_flair_text_color": "dark", "upvote_ratio": 0.62, "author_flair_background_color": null, "subreddit_type": "
+public", "ups": 2, "total_awards_received": 0, "media_embed": {}, "author_flair_template_id": null, "is_original_c
+ontent": false, "user_reports": [], "secure_media": null, "is_reddit_media_domain": false, "is_meta": false, "cate
+gory": null, "secure_media_embed": {}, "link_flair_text": null, "can_mod_post": false, "score": 2, "approved_by": 
+null, "is_created_from_ads_ui": false, "author_premium": false, "thumbnail": "", "edited": false, "author_flair_cs
+s_class": null, "author_flair_richtext": [], "gildings": {}, "content_categories": null, "is_self": true, "mod_not
+e": null, "created": 1679941472.0, "link_flair_type": "text", "wls": 6, "removed_by_category": null, "banned_by": 
+null, "author_flair_type": "text", "domain": "self.netflix", "allow_live_comments": false, "selftext_html": "&lt;!
+-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;&lt;a href=\"/r/netflix\"&gt;r/netflix&lt;/a&gt; trying to set up
+ netflix for the first time and every time i reach to the last step it keeps saying &amp;quot;There was an error p
+rocessing your payment information. Please check that all fields are filled out correctly and try again.&amp;quot;
+ when i enter my debit card details and clicking &amp;quot;start paid membership&amp;quot;? tf wrong with netflix?
+ i also tried switching emails to see if it was an email problem but nope.&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --
+&gt;", "likes": null, "suggested_sort": null, "banned_at_utc": null, "view_count": null, "archived": false, "no_fo
+llow": false, "is_crosspostable": false, "pinned": false, "over_18": false, "all_awardings": [], "awarders": [], "
+media_only": false, "can_gild": false, "spoiler": false, "locked": false, "author_flair_text": null, "treatment_ta
+gs": [], "visited": false, "removed_by": null, "num_reports": null, "distinguished": null, "subreddit_id": "t5_2qo
+xj", "author_is_blocked": false, "mod_reason_by": null, "removal_reason": null, "link_flair_background_color": "",
+ "id": "123vmp1", "is_robot_indexable": true, "report_reasons": null, "author": "voidantt_", "discussion_type": nu
+ll, "num_comments": 5, "send_replies": true, "whitelist_status": "all_ads", "contest_mode": false, "mod_reports": 
+[], "author_patreon_flair": false, "author_flair_text_color": null, "permalink": "/r/netflix/comments/123vmp1/ther
+e_was_an_error_processing_your_payment/", "parent_whitelist_status": "all_ads", "stickied": false, "url": "https:/
+/www.reddit.com/r/netflix/comments/123vmp1/there_was_an_error_processing_your_payment/", "subreddit_subscribers": 
+1576912, "created_utc": 1679941472.0, "num_crossposts": 0, "media": null, "is_video": false}}, {"kind": "t3", "dat
+a": {"approved_at_utc": null, "subreddit": "netflix", "selftext": "I was watching season 2 of the scream MTV serie
+s and I was in the middle of an episode and I paused to go take a shower, I come back maybe 20 minutes later and i
+t tells me I'm using a VPN (which I'm not) and I exit and get back on and it's suddenly gone.\nIt's not in my Cont
+inue watching and I can't search for it either. I think someone in my family set my profile to kids while I was go
+ne for some reason so I check that and not only is that not the case but it also puts my icon to one of the origin
+al ones but I had it set to Jynx from Arcane and now I can't find that either. I've check other peoples profiles i
+n my house and the show isn't there either. Idk what happened. Any ideas?", "author_fullname": "t2_at73v9xj", "sav
+ed": false, "mod_reason_title": null, "gilded": 0, "clicked": false, "title": "Scream MTV?", "link_flair_richtext"
+: [], "subreddit_name_prefixed": "r/netflix", "hidden": false, "pwls": 6, "link_flair_css_class": null, "downs": 0
+, "top_awarded_type": null, "hide_score": false, "name": "t3_123sjs8", "quarantine": false, "link_flair_text_color
+": "dark", "upvote_ratio": 0.5, "author_flair_background_color": null, "subreddit_type": "public", "ups": 0, "tota
+l_awards_received": 0, "media_embed": {}, "author_flair_template_id": null, "is_original_content": false, "user_re
+ports": [], "secure_media": null, "is_reddit_media_domain": false, "is_meta": false, "category": null, "secure_med
+ia_embed": {}, "link_flair_text": null, "can_mod_post": false, "score": 0, "approved_by": null, "is_created_from_a
+ds_ui": false, "author_premium": false, "thumbnail": "", "edited": false, "author_flair_css_class": null, "author_
+flair_richtext": [], "gildings": {}, "content_categories": null, "is_self": true, "mod_note": null, "created": 167
+9935122.0, "link_flair_type": "text", "wls": 6, "removed_by_category": null, "banned_by": null, "author_flair_type
+": "text", "domain": "self.netflix", "allow_live_comments": false, "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div 
+class=\"md\"&gt;&lt;p&gt;I was watching season 2 of the scream MTV series and I was in the middle of an episode an
+d I paused to go take a shower, I come back maybe 20 minutes later and it tells me I&amp;#39;m using a VPN (which 
+I&amp;#39;m not) and I exit and get back on and it&amp;#39;s suddenly gone.\nIt&amp;#39;s not in my Continue watch
+ing and I can&amp;#39;t search for it either. I think someone in my family set my profile to kids while I was gone
+ for some reason so I check that and not only is that not the case but it also puts my icon to one of the original
+ ones but I had it set to Jynx from Arcane and now I can&amp;#39;t find that either. I&amp;#39;ve check other peop
+les profiles in my house and the show isn&amp;#39;t there either. Idk what happened. Any ideas?&lt;/p&gt;\n&lt;/di
+v&gt;&lt;!-- SC_ON --&gt;", "likes": null, "suggested_sort": null, "banned_at_utc": null, "view_count": null, "arc
+hived": false, "no_follow": false, "is_crosspostable": false, "pinned": false, "over_18": false, "all_awardings": 
+[], "awarders": [], "media_only": false, "can_gild": false, "spoiler": false, "locked": false, "author_flair_text"
+: null, "treatment_tags": [], "visited": false, "removed_by": null, "num_reports": null, "distinguished": null, "s
+ubreddit_id": "t5_2qoxj", "author_is_blocked": false, "mod_reason_by": null, "removal_reason": null, "link_flair_b
+ackground_color": "", "id": "123sjs8", "is_robot_indexable": true, "report_reasons": null, "author": "Equal_Safety
+_9025", "discussion_type": null, "num_comments": 2, "send_replies": true, "whitelist_status": "all_ads", "contest_
+mode": false, "mod_reports": [], "author_patreon_flair": false, "author_flair_text_color": null, "permalink": "/r/
+netflix/comments/123sjs8/scream_mtv/", "parent_whitelist_status": "all_ads", "stickied": false, "url": "https://ww
+w.reddit.com/r/netflix/comments/123sjs8/scream_mtv/", "subreddit_subscribers": 1576912, "created_utc": 1679935122.
+0, "num_crossposts": 0, "media": null, "is_video": false}}, {"kind": "t3", "data": {"approved_at_utc": null, "subr
+eddit": "netflix", "selftext": " The movie hits the bull's eye by emphasizing how depressing, tense, moving, frust
+rating and useless war really is. The cinematography, performances, battle sequences and overall sound design are 
+all top-notch. I don't think I've seen a better sounding war movie that escalates the tension as profoundly as it 
+did. I believe it even beats the 'Dunkirk' sound design in many parts. Those beating drums, at irregular intervals
+, invoke sheer terror.\n\nThe puddle scene ran terrors through my mind, on what these young lads might've felt kil
+ling their enemy soldiers in the high of the battle and then contemplating that afterwards when they had time to p
+onder (provided they survived the ordeal).\n\nWhen they mentioned that it all was done for a few hundred meters of
+ the borderline, which largely stayed intact after the war, it just shows how pointless it was. Yet, millions of y
+oung blood were lost in vain, without them knowing why.", "author_fullname": "t2_8k5dd4ld", "saved": false, "mod_r
+eason_title": null, "gilded": 0, "clicked": false, "title": "[Discussion] 'All Quiet on the Western Front' is perh
+aps the best-portrayed war movie so far.", "link_flair_richtext": [], "subreddit_name_prefixed": "r/netflix", "hid
+den": false, "pwls": 6, "link_flair_css_class": null, "downs": 0, "top_awarded_type": null, "hide_score": false, "
+name": "t3_123ir6z", "quarantine": false, "link_flair_text_color": "dark", "upvote_ratio": 0.61, "author_flair_bac
+kground_color": null, "subreddit_type": "public", "ups": 4, "total_awards_received": 0, "media_embed": {}, "author
+_flair_template_id": null, "is_original_content": false, "user_reports": [], "secure_media": null, "is_reddit_medi
+a_domain": false, "is_meta": false, "category": null, "secure_media_embed": {}, "link_flair_text": null, "can_mod_
+post": false, "score": 4, "approved_by": null, "is_created_from_ads_ui": false, "author_premium": false, "thumbnai
+l": "", "edited": false, "author_flair_css_class": null, "author_flair_richtext": [], "gildings": {}, "content_cat
+egories": null, "is_self": true, "mod_note": null, "created": 1679912912.0, "link_flair_type": "text", "wls": 6, "
+removed_by_category": null, "banned_by": null, "author_flair_type": "text", "domain": "self.netflix", "allow_live_
+comments": false, "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;The movie hits the bull&
+amp;#39;s eye by emphasizing how depressing, tense, moving, frustrating and useless war really is. The cinematogra
+phy, performances, battle sequences and overall sound design are all top-notch. I don&amp;#39;t think I&amp;#39;ve
+ seen a better sounding war movie that escalates the tension as profoundly as it did. I believe it even beats the 
+&amp;#39;Dunkirk&amp;#39; sound design in many parts. Those beating drums, at irregular intervals, invoke sheer te
+rror.&lt;/p&gt;\n\n&lt;p&gt;The puddle scene ran terrors through my mind, on what these young lads might&amp;#39;v
+e felt killing their enemy soldiers in the high of the battle and then contemplating that afterwards when they had
+ time to ponder (provided they survived the ordeal).&lt;/p&gt;\n\n&lt;p&gt;When they mentioned that it all was don
+e for a few hundred meters of the borderline, which largely stayed intact after the war, it just shows how pointle
+ss it was. Yet, millions of young blood were lost in vain, without them knowing why.&lt;/p&gt;\n&lt;/div&gt;&lt;!-
+- SC_ON --&gt;", "likes": null, "suggested_sort": null, "banned_at_utc": null, "view_count": null, "archived": fal
+se, "no_follow": false, "is_crosspostable": false, "pinned": false, "over_18": false, "all_awardings": [], "awarde
+rs": [], "media_only": false, "can_gild": false, "spoiler": false, "locked": false, "author_flair_text": null, "tr
+eatment_tags": [], "visited": false, "removed_by": null, "num_reports": null, "distinguished": null, "subreddit_id
+": "t5_2qoxj", "author_is_blocked": false, "mod_reason_by": null, "removal_reason": null, "link_flair_background_c
+olor": "", "id": "123ir6z", "is_robot_indexable": true, "report_reasons": null, "author": "sandymartin07", "discus
+sion_type": null, "num_comments": 6, "send_replies": true, "whitelist_status": "all_ads", "contest_mode": false, "
+mod_reports": [], "author_patreon_flair": false, "author_flair_text_color": null, "permalink": "/r/netflix/comment
+s/123ir6z/discussion_all_quiet_on_the_western_front_is/", "parent_whitelist_status": "all_ads", "stickied": false,
+ "url": "https://www.reddit.com/r/netflix/comments/123ir6z/discussion_all_quiet_on_the_western_front_is/", "subred
+dit_subscribers": 1576912, "created_utc": 1679912912.0, "num_crossposts": 0, "media": null, "is_video": false}}, {
+"kind": "t3", "data": {"approved_at_utc": null, "subreddit": "netflix", "selftext": "", "author_fullname": "t2_src
+mk7h", "saved": false, "mod_reason_title": null, "gilded": 0, "clicked": false, "title": "Black Clover: Sword of t
+he Wizard King | Official Trailer [ENG SUB]", "link_flair_richtext": [], "subreddit_name_prefixed": "r/netflix", "
+hidden": false, "pwls": 6, "link_flair_css_class": null, "downs": 0, "top_awarded_type": null, "hide_score": false
+, "name": "t3_123rfkn", "quarantine": false, "link_flair_text_color": "dark", "upvote_ratio": 1.0, "author_flair_b
+ackground_color": null, "subreddit_type": "public", "ups": 1, "total_awards_received": 0, "media_embed": {"content
+": "&lt;iframe width=\"356\" height=\"200\" src=\"https://www.youtube.com/embed/u0cu-T7C9bU?feature=oembed&amp;ena
+blejsapi=1\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pictu
+re-in-picture; web-share\" allowfullscreen title=\"Black Clover: Sword of the Wizard King | Official Trailer #2 | 
+Netflix\"&gt;&lt;/iframe&gt;", "width": 356, "scrolling": false, "height": 200}, "author_flair_template_id": null,
+ "is_original_content": false, "user_reports": [], "secure_media": {"type": "youtube.com", "oembed": {"provider_ur
+l": "https://www.youtube.com/", "version": "1.0", "title": "Black Clover: Sword of the Wizard King | Official Trai
+ler #2 | Netflix", "type": "video", "thumbnail_width": 480, "height": 200, "width": 356, "html": "&lt;iframe width
+=\"356\" height=\"200\" src=\"https://www.youtube.com/embed/u0cu-T7C9bU?feature=oembed&amp;enablejsapi=1\" framebo
+rder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-s
+hare\" allowfullscreen title=\"Black Clover: Sword of the Wizard King | Official Trailer #2 | Netflix\"&gt;&lt;/if
+rame&gt;", "author_name": "Netflix Anime", "provider_name": "YouTube", "thumbnail_url": "https://i.ytimg.com/vi/u0
+cu-T7C9bU/hqdefault.jpg", "thumbnail_height": 360, "author_url": "https://www.youtube.com/@netflixanime"}}, "is_re
+ddit_media_domain": false, "is_meta": false, "category": null, "secure_media_embed": {"content": "&lt;iframe width
+=\"356\" height=\"200\" src=\"https://www.youtube.com/embed/u0cu-T7C9bU?feature=oembed&amp;enablejsapi=1\" framebo
+rder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-s
+hare\" allowfullscreen title=\"Black Clover: Sword of the Wizard King | Official Trailer #2 | Netflix\"&gt;&lt;/if
+rame&gt;", "width": 356, "scrolling": false, "media_domain_url": "https://www.redditmedia.com/mediaembed/123rfkn",
+ "height": 200}, "link_flair_text": null, "can_mod_post": false, "score": 1, "approved_by": null, "is_created_from
+_ads_ui": false, "author_premium": false, "thumbnail": "", "edited": false, "author_flair_css_class": null, "autho
+r_flair_richtext": [], "gildings": {}, "content_categories": null, "is_self": false, "mod_note": null, "created": 
+1679932937.0, "link_flair_type": "text", "wls": 6, "removed_by_category": null, "banned_by": null, "author_flair_t
+ype": "text", "domain": "youtu.be", "allow_live_comments": false, "selftext_html": null, "likes": null, "suggested
+_sort": null, "banned_at_utc": null, "url_overridden_by_dest": "https://youtu.be/u0cu-T7C9bU", "view_count": null,
+ "archived": false, "no_follow": false, "is_crosspostable": false, "pinned": false, "over_18": false, "all_awardin
+gs": [], "awarders": [], "media_only": false, "can_gild": false, "spoiler": false, "locked": false, "author_flair_
+text": null, "treatment_tags": [], "visited": false, "removed_by": null, "num_reports": null, "distinguished": nul
+l, "subreddit_id": "t5_2qoxj", "author_is_blocked": false, "mod_reason_by": null, "removal_reason": null, "link_fl
+air_background_color": "", "id": "123rfkn", "is_robot_indexable": true, "report_reasons": null, "author": "Atlast_
+2091", "discussion_type": null, "num_comments": 0, "send_replies": true, "whitelist_status": "all_ads", "contest_m
+ode": false, "mod_reports": [], "author_patreon_flair": false, "author_flair_text_color": null, "permalink": "/r/n
+etflix/comments/123rfkn/black_clover_sword_of_the_wizard_king_official/", "parent_whitelist_status": "all_ads", "s
+tickied": false, "url": "https://youtu.be/u0cu-T7C9bU", "subreddit_subscribers": 1576912, "created_utc": 167993293
+7.0, "num_crossposts": 0, "media": {"type": "youtube.com", "oembed": {"provider_url": "https://www.youtube.com/", 
+"version": "1.0", "title": "Black Clover: Sword of the Wizard King | Official Trailer #2 | Netflix", "type": "vide
+o", "thumbnail_width": 480, "height": 200, "width": 356, "html": "&lt;iframe width=\"356\" height=\"200\" src=\"ht
+tps://www.youtube.com/embed/u0cu-T7C9bU?feature=oembed&amp;enablejsapi=1\" frameborder=\"0\" allow=\"accelerometer
+; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen title=\"B
+lack Clover: Sword of the Wizard King | Official Trailer #2 | Netflix\"&gt;&lt;/iframe&gt;", "author_name": "Netfl
+ix Anime", "provider_name": "YouTube", "thumbnail_url": "https://i.ytimg.com/vi/u0cu-T7C9bU/hqdefault.jpg", "thumb
+nail_height": 360, "author_url": "https://www.youtube.com/@netflixanime"}}, "is_video": false}}, {"kind": "t3", "d
+ata": {"approved_at_utc": null, "subreddit": "netflix", "selftext": "", "author_fullname": "t2_n6465znx", "saved":
+ false, "mod_reason_title": null, "gilded": 0, "clicked": false, "title": "Florida Man | Official Trailer | Netfli
+x", "link_flair_richtext": [], "subreddit_name_prefixed": "r/netflix", "hidden": false, "pwls": 6, "link_flair_css
+_class": null, "downs": 0, "top_awarded_type": null, "hide_score": false, "name": "t3_123qbw7", "quarantine": fals
+e, "link_flair_text_color": "dark", "upvote_ratio": 0.67, "author_flair_background_color": null, "subreddit_type":
+ "public", "ups": 1, "total_awards_received": 0, "media_embed": {"content": "&lt;iframe width=\"356\" height=\"200
+\" src=\"https://www.youtube.com/embed/Juyodtul_7s?feature=oembed&amp;enablejsapi=1\" frameborder=\"0\" allow=\"ac
+celerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscree
+n title=\"Florida Man | Official Trailer | Netflix\"&gt;&lt;/iframe&gt;", "width": 356, "scrolling": false, "heigh
+t": 200}, "author_flair_template_id": null, "is_original_content": false, "user_reports": [], "secure_media": {"ty
+pe": "youtube.com", "oembed": {"provider_url": "https://www.youtube.com/", "version": "1.0", "title": "Florida Man
+ | Official Trailer | Netflix", "type": "video", "thumbnail_width": 480, "height": 200, "width": 356, "html": "&lt
+;iframe width=\"356\" height=\"200\" src=\"https://www.youtube.com/embed/Juyodtul_7s?feature=oembed&amp;enablejsap
+i=1\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-p
+icture; web-share\" allowfullscreen title=\"Florida Man | Official Trailer | Netflix\"&gt;&lt;/iframe&gt;", "autho
+r_name": "Netflix", "provider_name": "YouTube", "thumbnail_url": "https://i.ytimg.com/vi/Juyodtul_7s/hqdefault.jpg
+", "thumbnail_height": 360, "author_url": "https://www.youtube.com/@Netflix"}}, "is_reddit_media_domain": false, "
+is_meta": false, "category": null, "secure_media_embed": {"content": "&lt;iframe width=\"356\" height=\"200\" src=
+\"https://www.youtube.com/embed/Juyodtul_7s?feature=oembed&amp;enablejsapi=1\" frameborder=\"0\" allow=\"accelerom
+eter; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen title
+=\"Florida Man | Official Trailer | Netflix\"&gt;&lt;/iframe&gt;", "width": 356, "scrolling": false, "media_domain
+_url": "https://www.redditmedia.com/mediaembed/123qbw7", "height": 200}, "link_flair_text": null, "can_mod_post": 
+false, "score": 1, "approved_by": null, "is_created_from_ads_ui": false, "author_premium": false, "thumbnail": "",
+ "edited": false, "author_flair_css_class": null, "author_flair_richtext": [], "gildings": {}, "content_categories
+": null, "is_self": false, "mod_note": null, "created": 1679930872.0, "link_flair_type": "text", "wls": 6, "remove
+d_by_category": null, "banned_by": null, "author_flair_type": "text", "domain": "youtube.com", "allow_live_comment
+s": false, "selftext_html": null, "likes": null, "suggested_sort": null, "banned_at_utc": null, "url_overridden_by
+_dest": "https://www.youtube.com/watch?v=Juyodtul_7s", "view_count": null, "archived": false, "no_follow": false, 
+"is_crosspostable": false, "pinned": false, "over_18": false, "all_awardings": [], "awarders": [], "media_only": f
+alse, "can_gild": false, "spoiler": false, "locked": false, "author_flair_text": null, "treatment_tags": [], "visi
+ted": false, "removed_by": null, "num_reports": null, "distinguished": null, "subreddit_id": "t5_2qoxj", "author_i
+s_blocked": false, "mod_reason_by": null, "removal_reason": null, "link_flair_background_color": "", "id": "123qbw
+7", "is_robot_indexable": true, "report_reasons": null, "author": "baconroll2022", "discussion_type": null, "num_c
+omments": 3, "send_replies": false, "whitelist_status": "all_ads", "contest_mode": false, "mod_reports": [], "auth
+or_patreon_flair": false, "author_flair_text_color": null, "permalink": "/r/netflix/comments/123qbw7/florida_man_o
+fficial_trailer_netflix/", "parent_whitelist_status": "all_ads", "stickied": false, "url": "https://www.youtube.co
+m/watch?v=Juyodtul_7s", "subreddit_subscribers": 1576912, "created_utc": 1679930872.0, "num_crossposts": 0, "media
+": {"type": "youtube.com", "oembed": {"provider_url": "https://www.youtube.com/", "version": "1.0", "title": "Flor
+ida Man | Official Trailer | Netflix", "type": "video", "thumbnail_width": 480, "height": 200, "width": 356, "html
+": "&lt;iframe width=\"356\" height=\"200\" src=\"https://www.youtube.com/embed/Juyodtul_7s?feature=oembed&amp;ena
+blejsapi=1\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pictu
+re-in-picture; web-share\" allowfullscreen title=\"Florida Man | Official Trailer | Netflix\"&gt;&lt;/iframe&gt;",
+ "author_name": "Netflix", "provider_name": "YouTube", "thumbnail_url": "https://i.ytimg.com/vi/Juyodtul_7s/hqdefa
+ult.jpg", "thumbnail_height": 360, "author_url": "https://www.youtube.com/@Netflix"}}, "is_video": false}}, {"kind
+": "t3", "data": {"approved_at_utc": null, "subreddit": "netflix", "selftext": "", "author_fullname": "t2_tbif9qwe
+", "saved": false, "mod_reason_title": null, "gilded": 0, "clicked": false, "is_gallery": true, "title": "Wednesda
+y as a Tim Burton animated film", "link_flair_richtext": [], "subreddit_name_prefixed": "r/netflix", "hidden": fal
+se, "pwls": 6, "link_flair_css_class": null, "downs": 0, "top_awarded_type": null, "hide_score": false, "media_met
+adata": {"6uxplt2b45qa1": {"status": "valid", "e": "Image", "m": "image/jpg", "p": [{"y": 72, "x": 108, "u": "http
+s://preview.redd.it/6uxplt2b45qa1.jpg?width=108&amp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=78b8978430818d5a3
+64693431411db5608af2b5c"}, {"y": 144, "x": 216, "u": "https://preview.redd.it/6uxplt2b45qa1.jpg?width=216&amp;crop
+=smart&amp;auto=webp&amp;v=enabled&amp;s=afee0c5338a3f6f1958c89486c2fd67076c43879"}, {"y": 213, "x": 320, "u": "ht
+tps://preview.redd.it/6uxplt2b45qa1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=88acfff3dfc72ba
+5201570e9bb6107ff34e9c142"}, {"y": 426, "x": 640, "u": "https://preview.redd.it/6uxplt2b45qa1.jpg?width=640&amp;cr
+op=smart&amp;auto=webp&amp;v=enabled&amp;s=d3712affb0fc1c9ef0139a407f439393beaf7046"}, {"y": 640, "x": 960, "u": "
+https://preview.redd.it/6uxplt2b45qa1.jpg?width=960&amp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=3be8114f68ba7
+b9a8904dae6ae4949f0896ae9a7"}, {"y": 720, "x": 1080, "u": "https://preview.redd.it/6uxplt2b45qa1.jpg?width=1080&am
+p;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=c0891c35845ff1e8cc04f12487325f6193da2511"}], "s": {"y": 1024, "x": 
+1536, "u": "https://preview.redd.it/6uxplt2b45qa1.jpg?width=1536&amp;format=pjpg&amp;auto=webp&amp;v=enabled&amp;s
+=89a65f917131933e2753da98e280bcd0a6c826e8"}, "id": "6uxplt2b45qa1"}, "880r3x2b45qa1": {"status": "valid", "e": "Im
+age", "m": "image/jpg", "p": [{"y": 69, "x": 108, "u": "https://preview.redd.it/880r3x2b45qa1.jpg?width=108&amp;cr
+op=smart&amp;auto=webp&amp;v=enabled&amp;s=a88813cbac4e1b288824fe27a000e2824e046237"}, {"y": 139, "x": 216, "u": "
+https://preview.redd.it/880r3x2b45qa1.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=bae2dc41c9fe7
+0be599634c36a9da5b81d6d6738"}, {"y": 206, "x": 320, "u": "https://preview.redd.it/880r3x2b45qa1.jpg?width=320&amp;
+crop=smart&amp;auto=webp&amp;v=enabled&amp;s=1fb262c6aa291cd1a564d79dae8fa126750959c1"}, {"y": 412, "x": 640, "u":
+ "https://preview.redd.it/880r3x2b45qa1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=b59f5749cea
+053622135dee2b8b27e2ecc8b970a"}, {"y": 618, "x": 960, "u": "https://preview.redd.it/880r3x2b45qa1.jpg?width=960&am
+p;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=c17a19e751c9b2536465a3d6677740788ba8d19e"}, {"y": 695, "x": 1080, "
+u": "https://preview.redd.it/880r3x2b45qa1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=5db063c
+4225b55e1bb7f418d99b3e115fadbaf78"}], "s": {"y": 750, "x": 1164, "u": "https://preview.redd.it/880r3x2b45qa1.jpg?w
+idth=1164&amp;format=pjpg&amp;auto=webp&amp;v=enabled&amp;s=0fe81be9239ae5a9b9b1b434db0c61504a0e5946"}, "id": "880
+r3x2b45qa1"}, "ogo3ws2b45qa1": {"status": "valid", "e": "Image", "m": "image/jpg", "p": [{"y": 72, "x": 108, "u": 
+"https://preview.redd.it/ogo3ws2b45qa1.jpg?width=108&amp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=9b7d6b41765f
+2f6b83daccdd1cd359dd7534936d"}, {"y": 144, "x": 216, "u": "https://preview.redd.it/ogo3ws2b45qa1.jpg?width=216&amp
+;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=7b81a66213d2ac6815bb574acf69e0787db8d0d7"}, {"y": 214, "x": 320, "u"
+: "https://preview.redd.it/ogo3ws2b45qa1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=7dcfda0546
+11a0ed2d2d89c68a7284f6f0a2abeb"}, {"y": 429, "x": 640, "u": "https://preview.redd.it/ogo3ws2b45qa1.jpg?width=640&a
+mp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=e337d65608766e60f207199535f9953441ae38e3"}, {"y": 644, "x": 960, "
+u": "https://preview.redd.it/ogo3ws2b45qa1.jpg?width=960&amp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=29f63aab
+6a607fa1af950507139b8e1456d78402"}, {"y": 724, "x": 1080, "u": "https://preview.redd.it/ogo3ws2b45qa1.jpg?width=10
+80&amp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=f4d933972a3d8c38795280f73cb448f4e6adbe77"}], "s": {"y": 750, "
+x": 1118, "u": "https://preview.redd.it/ogo3ws2b45qa1.jpg?width=1118&amp;format=pjpg&amp;auto=webp&amp;v=enabled&a
+mp;s=b5457c42e7c62c40bb02a985b7c02107ad0caa6a"}, "id": "ogo3ws2b45qa1"}}, "name": "t3_122xt7v", "quarantine": fals
+e, "link_flair_text_color": "dark", "upvote_ratio": 0.62, "author_flair_background_color": null, "subreddit_type":
+ "public", "ups": 7, "total_awards_received": 0, "media_embed": {}, "author_flair_template_id": null, "is_original
+_content": false, "user_reports": [], "secure_media": null, "is_reddit_media_domain": false, "is_meta": false, "ca
+tegory": null, "secure_media_embed": {}, "gallery_data": {"items": [{"outbound_url": "https://youtu.be/lAwhcppd7ck
+", "media_id": "6uxplt2b45qa1", "id": 255891640}, {"media_id": "ogo3ws2b45qa1", "id": 255891641}, {"media_id": "88
+0r3x2b45qa1", "id": 255891642}]}, "link_flair_text": null, "can_mod_post": false, "score": 7, "approved_by": null,
+ "is_created_from_ads_ui": false, "author_premium": false, "thumbnail": "", "edited": false, "author_flair_css_cla
+ss": null, "author_flair_richtext": [], "gildings": {}, "content_categories": null, "is_self": false, "mod_note": 
+null, "created": 1679861205.0, "link_flair_type": "text", "wls": 6, "removed_by_category": null, "banned_by": null
+, "author_flair_type": "text", "domain": "reddit.com", "allow_live_comments": false, "selftext_html": null, "likes
+": null, "suggested_sort": null, "banned_at_utc": null, "url_overridden_by_dest": "https://www.reddit.com/gallery/
+122xt7v", "view_count": null, "archived": false, "no_follow": false, "is_crosspostable": false, "pinned": false, "
+over_18": false, "all_awardings": [], "awarders": [], "media_only": false, "can_gild": false, "spoiler": false, "l
+ocked": false, "author_flair_text": null, "treatment_tags": [], "visited": false, "removed_by": null, "num_reports
+": null, "distinguished": null, "subreddit_id": "t5_2qoxj", "author_is_blocked": false, "mod_reason_by": null, "re
+moval_reason": null, "link_flair_background_color": "", "id": "122xt7v", "is_robot_indexable": true, "report_reaso
+ns": null, "author": "Efficient-Mobile7278", "discussion_type": null, "num_comments": 4, "send_replies": true, "wh
+itelist_status": "all_ads", "contest_mode": false, "mod_reports": [], "author_patreon_flair": false, "author_flair
+_text_color": null, "permalink": "/r/netflix/comments/122xt7v/wednesday_as_a_tim_burton_animated_film/", "parent_w
+hitelist_status": "all_ads", "stickied": false, "url": "https://youtu.be/lAwhcppd7ck", "subreddit_subscribers": 15
+76912, "created_utc": 1679861205.0, "num_crossposts": 0, "media": null, "is_video": false}}, {"kind": "t3", "data"
+: {"approved_at_utc": null, "subreddit": "netflix", "selftext": "What classic novels do you want Netflix to adapt 
+next? I have a pretty long list\u2026.\n\n* Lord of the Flies\n* The Giver Quartet\n* The Magic Treehouse\n* Lifeb
+oat by John Steinbeck", "author_fullname": "t2_2p1226rk", "saved": false, "mod_reason_title": null, "gilded": 0, "
+clicked": false, "title": "In light of All Quiet on the Western Front\u2026", "link_flair_richtext": [], "subreddi
+t_name_prefixed": "r/netflix", "hidden": false, "pwls": 6, "link_flair_css_class": null, "downs": 0, "top_awarded_
+type": null, "hide_score": false, "name": "t3_1236y9u", "quarantine": false, "link_flair_text_color": "dark", "upv
+ote_ratio": 0.6, "author_flair_background_color": null, "subreddit_type": "public", "ups": 2, "total_awards_receiv
+ed": 0, "media_embed": {}, "author_flair_template_id": null, "is_original_content": false, "user_reports": [], "se
+cure_media": null, "is_reddit_media_domain": false, "is_meta": false, "category": null, "secure_media_embed": {}, 
+"link_flair_text": null, "can_mod_post": false, "score": 2, "approved_by": null, "is_created_from_ads_ui": false, 
+"author_premium": false, "thumbnail": "", "edited": false, "author_flair_css_class": null, "author_flair_richtext"
+: [], "gildings": {}, "content_categories": null, "is_self": true, "mod_note": null, "created": 1679880919.0, "lin
+k_flair_type": "text", "wls": 6, "removed_by_category": null, "banned_by": null, "author_flair_type": "text", "dom
+ain": "self.netflix", "allow_live_comments": false, "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt
+;&lt;p&gt;What classic novels do you want Netflix to adapt next? I have a pretty long list\u2026.&lt;/p&gt;\n\n&lt
+;ul&gt;\n&lt;li&gt;Lord of the Flies&lt;/li&gt;\n&lt;li&gt;The Giver Quartet&lt;/li&gt;\n&lt;li&gt;The Magic Treeh
+ouse&lt;/li&gt;\n&lt;li&gt;Lifeboat by John Steinbeck&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", 
+"likes": null, "suggested_sort": null, "banned_at_utc": null, "view_count": null, "archived": false, "no_follow": 
+false, "is_crosspostable": false, "pinned": false, "over_18": false, "all_awardings": [], "awarders": [], "media_o
+nly": false, "can_gild": false, "spoiler": false, "locked": false, "author_flair_text": null, "treatment_tags": []
+, "visited": false, "removed_by": null, "num_reports": null, "distinguished": null, "subreddit_id": "t5_2qoxj", "a
+uthor_is_blocked": false, "mod_reason_by": null, "removal_reason": null, "link_flair_background_color": "", "id": 
+"1236y9u", "is_robot_indexable": true, "report_reasons": null, "author": "Puterboy1", "discussion_type": null, "nu
+m_comments": 1, "send_replies": true, "whitelist_status": "all_ads", "contest_mode": false, "mod_reports": [], "au
+thor_patreon_flair": false, "author_flair_text_color": null, "permalink": "/r/netflix/comments/1236y9u/in_light_of
+_all_quiet_on_the_western_front/", "parent_whitelist_status": "all_ads", "stickied": false, "url": "https://www.re
+ddit.com/r/netflix/comments/1236y9u/in_light_of_all_quiet_on_the_western_front/", "subreddit_subscribers": 1576912
+, "created_utc": 1679880919.0, "num_crossposts": 0, "media": null, "is_video": false}}, {"kind": "t3", "data": {"a
+pproved_at_utc": null, "subreddit": "netflix", "selftext": "", "user_reports": [], "saved": false, "mod_reason_tit
+le": null, "gilded": 0, "clicked": false, "title": "Is it bad?", "link_flair_richtext": [], "subreddit_name_prefix
+ed": "r/netflix", "hidden": false, "pwls": 6, "link_flair_css_class": null, "downs": 0, "top_awarded_type": null, 
+"hide_score": false, "name": "t3_123mtea", "quarantine": false, "link_flair_text_color": "dark", "upvote_ratio": 0
+.43, "author_flair_background_color": null, "subreddit_type": "public", "ups": 0, "total_awards_received": 0, "med
+ia_embed": {}, "author_flair_template_id": null, "is_original_content": false, "author_fullname": "t2_ttzi8fe6", "
+secure_media": null, "is_reddit_media_domain": true, "is_meta": false, "category": null, "secure_media_embed": {},
+ "link_flair_text": null, "can_mod_post": false, "score": 0, "approved_by": null, "is_created_from_ads_ui": false,
+ "author_premium": false, "thumbnail": "", "edited": false, "author_flair_css_class": null, "author_flair_richtext
+": [], "gildings": {}, "content_categories": null, "is_self": false, "mod_note": null, "crosspost_parent_list": [{
+"approved_at_utc": null, "subreddit": "wednesdayshow", "selftext": "", "author_fullname": "t2_ttzi8fe6", "saved": 
+false, "mod_reason_title": null, "gilded": 0, "clicked": false, "title": "Bad Wednesday Edit", "link_flair_richtex
+t": [], "subreddit_name_prefixed": "r/wednesdayshow", "hidden": false, "pwls": null, "link_flair_css_class": null,
+ "downs": 0, "top_awarded_type": null, "hide_score": false, "name": "t3_zk8d0p", "quarantine": false, "link_flair_
+text_color": "dark", "upvote_ratio": 0.75, "author_flair_background_color": "#ff8717", "subreddit_type": "public",
+ "ups": 2, "total_awards_received": 0, "media_embed": {}, "author_flair_template_id": "c2c62c02-7624-11ed-a9f8-aef
+9e4bf8384", "is_original_content": false, "user_reports": [], "secure_media": {"reddit_video": {"bitrate_kbps": 48
+00, "fallback_url": "https://v.redd.it/f0xqe1zi5k5a1/DASH_1080.mp4?source=fallback", "height": 1080, "width": 608,
+ "scrubber_media_url": "https://v.redd.it/f0xqe1zi5k5a1/DASH_96.mp4", "dash_url": "https://v.redd.it/f0xqe1zi5k5a1
+/DASHPlaylist.mpd?a=1682541653%2CYWI1NGMwYTFkMDc5YTVlMTJjMzA4NjNkMTMyZGZiNWExMTA4MDY2MmJiMThjZmZkNGYyMWU4NzYyZmZmN
+WViZA%3D%3D&amp;v=1&amp;f=sd", "duration": 18, "hls_url": "https://v.redd.it/f0xqe1zi5k5a1/HLSPlaylist.m3u8?a=1682
+541653%2CNDIxMWIzOTE0NjE3ZjZlMGU1YzU3ZWFkMzhkYjg2NjNjOTM4NDM5ZjNjNTk4ZjM2OGM4NWMwMjZmZjA0YjQ1Nw%3D%3D&amp;v=1&amp;
+f=sd", "is_gif": false, "transcoding_status": "completed"}}, "is_reddit_media_domain": true, "is_meta": false, "ca
+tegory": null, "secure_media_embed": {}, "link_flair_text": null, "can_mod_post": false, "score": 2, "approved_by"
+: null, "is_created_from_ads_ui": false, "author_premium": false, "thumbnail": "", "edited": false, "author_flair_
+css_class": null, "author_flair_richtext": [], "gildings": {}, "content_categories": null, "is_self": false, "mod_
+note": null, "created": 1670872449.0, "link_flair_type": "text", "wls": null, "removed_by_category": null, "banned
+_by": null, "author_flair_type": "text", "domain": "v.redd.it", "allow_live_comments": false, "selftext_html": nul
+l, "likes": null, "suggested_sort": null, "banned_at_utc": null, "url_overridden_by_dest": "https://v.redd.it/f0xq
+e1zi5k5a1", "view_count": null, "archived": false, "no_follow": true, "is_crosspostable": false, "pinned": false, 
+"over_18": false, "all_awardings": [], "awarders": [], "media_only": false, "can_gild": false, "spoiler": false, "
+locked": false, "author_flair_text": "Mod", "treatment_tags": [], "visited": false, "removed_by": null, "num_repor
+ts": null, "distinguished": null, "subreddit_id": "t5_7izd23", "author_is_blocked": false, "mod_reason_by": null, 
+"removal_reason": null, "link_flair_background_color": "", "id": "zk8d0p", "is_robot_indexable": true, "report_rea
+sons": null, "author": "Kevsay", "discussion_type": null, "num_comments": 3, "send_replies": true, "whitelist_stat
+us": null, "contest_mode": false, "mod_reports": [], "author_patreon_flair": false, "author_flair_text_color": "li
+ght", "permalink": "/r/wednesdayshow/comments/zk8d0p/bad_wednesday_edit/", "parent_whitelist_status": null, "stick
+ied": false, "url": "https://v.redd.it/f0xqe1zi5k5a1", "subreddit_subscribers": 13, "created_utc": 1670872449.0, "
+num_crossposts": 2, "media": {"reddit_video": {"bitrate_kbps": 4800, "fallback_url": "https://v.redd.it/f0xqe1zi5k
+5a1/DASH_1080.mp4?source=fallback", "height": 1080, "width": 608, "scrubber_media_url": "https://v.redd.it/f0xqe1z
+i5k5a1/DASH_96.mp4", "dash_url": "https://v.redd.it/f0xqe1zi5k5a1/DASHPlaylist.mpd?a=1682541653%2CYWI1NGMwYTFkMDc5
+YTVlMTJjMzA4NjNkMTMyZGZiNWExMTA4MDY2MmJiMThjZmZkNGYyMWU4NzYyZmZmNWViZA%3D%3D&amp;v=1&amp;f=sd", "duration": 18, "h
+ls_url": "https://v.redd.it/f0xqe1zi5k5a1/HLSPlaylist.m3u8?a=1682541653%2CNDIxMWIzOTE0NjE3ZjZlMGU1YzU3ZWFkMzhkYjg2
+NjNjOTM4NDM5ZjNjNTk4ZjM2OGM4NWMwMjZmZjA0YjQ1Nw%3D%3D&amp;v=1&amp;f=sd", "is_gif": false, "transcoding_status": "co
+mpleted"}}, "is_video": true}], "created": 1679923392.0, "link_flair_type": "text", "wls": 6, "removed_by_category
+": null, "banned_by": null, "author_flair_type": "text", "domain": "v.redd.it", "allow_live_comments": false, "sel
+ftext_html": null, "likes": null, "suggested_sort": null, "banned_at_utc": null, "url_overridden_by_dest": "https:
+//v.redd.it/f0xqe1zi5k5a1", "view_count": null, "archived": false, "no_follow": false, "is_crosspostable": false, 
+"pinned": false, "over_18": false, "all_awardings": [], "awarders": [], "media_only": false, "can_gild": false, "s
+poiler": false, "locked": false, "author_flair_text": null, "treatment_tags": [], "visited": false, "removed_by": 
+null, "num_reports": null, "distinguished": null, "subreddit_id": "t5_2qoxj", "author_is_blocked": false, "mod_rea
+son_by": null, "removal_reason": null, "link_flair_background_color": "", "id": "123mtea", "is_robot_indexable": t
+rue, "report_reasons": null, "author": "Kevsay", "discussion_type": null, "num_comments": 1, "send_replies": true,
+ "whitelist_status": "all_ads", "contest_mode": false, "mod_reports": [], "author_patreon_flair": false, "crosspos
+t_parent": "t3_zk8d0p", "author_flair_text_color": null, "permalink": "/r/netflix/comments/123mtea/is_it_bad/", "p
+arent_whitelist_status": "all_ads", "stickied": false, "url": "https://v.redd.it/f0xqe1zi5k5a1", "subreddit_subscr
+ibers": 1576912, "created_utc": 1679923392.0, "num_crossposts": 0, "media": null, "is_video": false}}, {"kind": "t
+3", "data": {"approved_at_utc": null, "subreddit": "netflix", "selftext": "Just watched those and enjoyed the \u20
+1cvibe\u201d of how the characters casually smoked weed but it wasnt the main plot. This is probably a weird reque
+st but I\u2019m basically looking for something with the same type of energy, not necessarily a stoner show. Both 
+the shows I mentioned are \u201cteen\u201d shows so maybe another one would be cool.", "author_fullname": "t2_4dwv
+vyl8", "saved": false, "mod_reason_title": null, "gilded": 0, "clicked": false, "title": "Shows with weed smoking 
+like Outer Banks and Ginny &amp; Georgia?", "link_flair_richtext": [], "subreddit_name_prefixed": "r/netflix", "hi
+dden": false, "pwls": 6, "link_flair_css_class": null, "downs": 0, "top_awarded_type": null, "hide_score": false, 
+"name": "t3_123d6di", "quarantine": false, "link_flair_text_color": "dark", "upvote_ratio": 0.43, "author_flair_ba
+ckground_color": null, "subreddit_type": "public", "ups": 0, "total_awards_received": 0, "media_embed": {}, "autho
+r_flair_template_id": null, "is_original_content": false, "user_reports": [], "secure_media": null, "is_reddit_med
+ia_domain": false, "is_meta": false, "category": null, "secure_media_embed": {}, "link_flair_text": null, "can_mod
+_post": false, "score": 0, "approved_by": null, "is_created_from_ads_ui": false, "author_premium": false, "thumbna
+il": "", "edited": false, "author_flair_css_class": null, "author_flair_richtext": [], "gildings": {}, "content_ca
+tegories": null, "is_self": true, "mod_note": null, "created": 1679896589.0, "link_flair_type": "text", "wls": 6, 
+"removed_by_category": null, "banned_by": null, "author_flair_type": "text", "domain": "self.netflix", "allow_live
+_comments": false, "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;Just watched those and 
+enjoyed the \u201cvibe\u201d of how the characters casually smoked weed but it wasnt the main plot. This is probab
+ly a weird request but I\u2019m basically looking for something with the same type of energy, not necessarily a st
+oner show. Both the shows I mentioned are \u201cteen\u201d shows so maybe another one would be cool.&lt;/p&gt;\n&l
+t;/div&gt;&lt;!-- SC_ON --&gt;", "likes": null, "suggested_sort": null, "banned_at_utc": null, "view_count": null,
+ "archived": false, "no_follow": false, "is_crosspostable": false, "pinned": false, "over_18": false, "all_awardin
+gs": [], "awarders": [], "media_only": false, "can_gild": false, "spoiler": false, "locked": false, "author_flair_
+text": null, "treatment_tags": [], "visited": false, "removed_by": null, "num_reports": null, "distinguished": nul
+l, "subreddit_id": "t5_2qoxj", "author_is_blocked": false, "mod_reason_by": null, "removal_reason": null, "link_fl
+air_background_color": "", "id": "123d6di", "is_robot_indexable": true, "report_reasons": null, "author": "eagerbe
+aver8", "discussion_type": null, "num_comments": 1, "send_replies": true, "whitelist_status": "all_ads", "contest_
+mode": false, "mod_reports": [], "author_patreon_flair": false, "author_flair_text_color": null, "permalink": "/r/
+netflix/comments/123d6di/shows_with_weed_smoking_like_outer_banks_and/", "parent_whitelist_status": "all_ads", "st
+ickied": false, "url": "https://www.reddit.com/r/netflix/comments/123d6di/shows_with_weed_smoking_like_outer_banks
+_and/", "subreddit_subscribers": 1576912, "created_utc": 1679896589.0, "num_crossposts": 0, "media": null, "is_vid
+eo": false}}, {"kind": "t3", "data": {"approved_at_utc": null, "subreddit": "netflix", "selftext": "", "author_ful
+lname": "t2_wigp2", "saved": false, "mod_reason_title": null, "gilded": 0, "clicked": false, "title": "Medvedev ur
+ges Russians to download pirated movies, so Netflix goes bankrupt", "link_flair_richtext": [], "subreddit_name_pre
+fixed": "r/netflix", "hidden": false, "pwls": 6, "link_flair_css_class": null, "downs": 0, "top_awarded_type": nul
+l, "hide_score": false, "name": "t3_121qf2k", "quarantine": false, "link_flair_text_color": "dark", "upvote_ratio"
+: 0.94, "author_flair_background_color": null, "subreddit_type": "public", "ups": 520, "total_awards_received": 0,
+ "media_embed": {}, "author_flair_template_id": null, "is_original_content": false, "user_reports": [], "secure_me
+dia": null, "is_reddit_media_domain": false, "is_meta": false, "category": null, "secure_media_embed": {}, "link_f
+lair_text": null, "can_mod_post": false, "score": 520, "approved_by": null, "is_created_from_ads_ui": false, "auth
+or_premium": false, "thumbnail": "", "edited": false, "author_flair_css_class": null, "author_flair_richtext": [],
+ "gildings": {}, "content_categories": null, "is_self": false, "mod_note": null, "created": 1679760378.0, "link_fl
+air_type": "text", "wls": 6, "removed_by_category": null, "banned_by": null, "author_flair_type": "text", "domain"
+: "pravda.com.ua", "allow_live_comments": true, "selftext_html": null, "likes": null, "suggested_sort": null, "ban
+ned_at_utc": null, "url_overridden_by_dest": "https://www.pravda.com.ua/eng/news/2023/03/25/7395062/", "view_count
+": null, "archived": false, "no_follow": false, "is_crosspostable": false, "pinned": false, "over_18": false, "all
+_awardings": [], "awarders": [], "media_only": false, "can_gild": false, "spoiler": false, "locked": false, "autho
+r_flair_text": null, "treatment_tags": [], "visited": false, "removed_by": null, "num_reports": null, "distinguish
+ed": null, "subreddit_id": "t5_2qoxj", "author_is_blocked": false, "mod_reason_by": null, "removal_reason": null, 
+"link_flair_background_color": "", "id": "121qf2k", "is_robot_indexable": true, "report_reasons": null, "author": 
+"marcusyami", "discussion_type": null, "num_comments": 95, "send_replies": false, "whitelist_status": "all_ads", "
+contest_mode": false, "mod_reports": [], "author_patreon_flair": false, "author_flair_text_color": null, "permalin
+k": "/r/netflix/comments/121qf2k/medvedev_urges_russians_to_download_pirated/", "parent_whitelist_status": "all_ad
+s", "stickied": false, "url": "https://www.pravda.com.ua/eng/news/2023/03/25/7395062/", "subreddit_subscribers": 1
+576912, "created_utc": 1679760378.0, "num_crossposts": 0, "media": null, "is_video": false}}, {"kind": "t3", "data
+": {"approved_at_utc": null, "subreddit": "netflix", "selftext": "Settings &gt; password &amp; security  &gt; pin 
+or pattern (add a pin or pattern to lock Ur phone) &gt; apps &gt; manage apps &gt; Netflix &gt; clear data and cac
+he &gt; restart your phone\n\nThat should give u widevine L1 back and now u can play and download hd contents agai
+n", "author_fullname": "t2_k0z10bn1", "saved": false, "mod_reason_title": null, "gilded": 0, "clicked": false, "ti
+tle": "Solution to playback only showing SD support (Xiaomi not sure if it will work for others)", "link_flair_ric
+htext": [], "subreddit_name_prefixed": "r/netflix", "hidden": false, "pwls": 6, "link_flair_css_class": null, "dow
+ns": 0, "top_awarded_type": null, "hide_score": false, "name": "t3_1232te2", "quarantine": false, "link_flair_text
+_color": "dark", "upvote_ratio": 0.4, "author_flair_background_color": null, "subreddit_type": "public", "ups": 0,
+ "total_awards_received": 0, "media_embed": {}, "author_flair_template_id": null, "is_original_content": false, "u
+ser_reports": [], "secure_media": null, "is_reddit_media_domain": false, "is_meta": false, "category": null, "secu
+re_media_embed": {}, "link_flair_text": null, "can_mod_post": false, "score": 0, "approved_by": null, "is_created_
+from_ads_ui": false, "author_premium": false, "thumbnail": "", "edited": false, "author_flair_css_class": null, "a
+uthor_flair_richtext": [], "gildings": {}, "content_categories": null, "is_self": true, "mod_note": null, "created
+": 1679871353.0, "link_flair_type": "text", "wls": 6, "removed_by_category": null, "banned_by": null, "author_flai
+r_type": "text", "domain": "self.netflix", "allow_live_comments": false, "selftext_html": "&lt;!-- SC_OFF --&gt;&l
+t;div class=\"md\"&gt;&lt;p&gt;Settings &amp;gt; password &amp;amp; security  &amp;gt; pin or pattern (add a pin o
+r pattern to lock Ur phone) &amp;gt; apps &amp;gt; manage apps &amp;gt; Netflix &amp;gt; clear data and cache &amp
+;gt; restart your phone&lt;/p&gt;\n\n&lt;p&gt;That should give u widevine L1 back and now u can play and download 
+hd contents again&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "likes": null, "suggested_sort": null, "banned_at_
+utc": null, "view_count": null, "archived": false, "no_follow": false, "is_crosspostable": false, "pinned": false,
+ "over_18": false, "all_awardings": [], "awarders": [], "media_only": false, "can_gild": false, "spoiler": false, 
+"locked": false, "author_flair_text": null, "treatment_tags": [], "visited": false, "removed_by": null, "num_repor
+ts": null, "distinguished": null, "subreddit_id": "t5_2qoxj", "author_is_blocked": false, "mod_reason_by": null, "
+removal_reason": null, "link_flair_background_color": "", "id": "1232te2", "is_robot_indexable": true, "report_rea
+sons": null, "author": "ManIneedOuttaHere", "discussion_type": null, "num_comments": 1, "send_replies": true, "whi
+telist_status": "all_ads", "contest_mode": false, "mod_reports": [], "author_patreon_flair": false, "author_flair_
+text_color": null, "permalink": "/r/netflix/comments/1232te2/solution_to_playback_only_showing_sd_support/", "pare
+nt_whitelist_status": "all_ads", "stickied": false, "url": "https://www.reddit.com/r/netflix/comments/1232te2/solu
+tion_to_playback_only_showing_sd_support/", "subreddit_subscribers": 1576912, "created_utc": 1679871353.0, "num_cr
+ossposts": 0, "media": null, "is_video": false}}, {"kind": "t3", "data": {"approved_at_utc": null, "subreddit": "n
+etflix", "selftext": "", "author_fullname": "t2_srcmk7h", "saved": false, "mod_reason_title": null, "gilded": 0, "
+clicked": false, "title": "Jujutsu Kaisen Season 2 Official Main Trailer | English Sub", "link_flair_richtext": []
+, "subreddit_name_prefixed": "r/netflix", "hidden": false, "pwls": 6, "link_flair_css_class": null, "downs": 0, "t
+op_awarded_type": null, "hide_score": false, "name": "t3_122j2r4", "quarantine": false, "link_flair_text_color": "
+dark", "upvote_ratio": 0.8, "author_flair_background_color": null, "subreddit_type": "public", "ups": 8, "total_aw
+ards_received": 0, "media_embed": {"content": "&lt;iframe width=\"356\" height=\"200\" src=\"https://www.youtube.c
+om/embed/GPvvPOBQdWA?feature=oembed&amp;enablejsapi=1\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboa
+rd-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen title=\"Jujutsu Kaisen Seaso
+n 2 Official Main Trailer | English Sub\"&gt;&lt;/iframe&gt;", "width": 356, "scrolling": false, "height": 200}, "
+author_flair_template_id": null, "is_original_content": false, "user_reports": [], "secure_media": {"type": "youtu
+be.com", "oembed": {"provider_url": "https://www.youtube.com/", "version": "1.0", "title": "Jujutsu Kaisen Season 
+2 Official Main Trailer | English Sub", "type": "video", "thumbnail_width": 480, "height": 200, "width": 356, "htm
+l": "&lt;iframe width=\"356\" height=\"200\" src=\"https://www.youtube.com/embed/GPvvPOBQdWA?feature=oembed&amp;en
+ablejsapi=1\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pict
+ure-in-picture; web-share\" allowfullscreen title=\"Jujutsu Kaisen Season 2 Official Main Trailer | English Sub\"&
+jk1642@ip-10-81-64-40:~$ curl --user agent "Jinse Kim Data Collector" https://www.reddit.com/r/netflix.json > data.json
+Enter host password for user 'agent':
+curl: (3) URL using bad/illegal format or missing URL
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  118k  100  118k    0     0   271k      0 --:--:-- --:--:-- --:--:--  271k
+jk1642@ip-10-81-64-40:~$ more data.json
+{"kind": "Listing", "data": {"after": "t3_1233ca7", "dist": 27, "modhash": "", "geo_filter": null, "children": [{"
+kind": "t3", "data": {"approved_at_utc": null, "subreddit": "netflix", "selftext": "We are pleased to announce we 
+have affiliated with https://discord.gg/Netflix which will be the subreddit Discord server for the Netflix subredd
+it! \n\nFeel free to join the server and talk about everything Netflix related, including shows on Netflix as well
+ :).", "author_fullname": "t2_q5aen", "saved": false, "mod_reason_title": null, "gilded": 0, "clicked": false, "ti
+tle": "/r/Netflix Discord Server", "link_flair_richtext": [], "subreddit_name_prefixed": "r/netflix", "hidden": fa
+lse, "pwls": 6, "link_flair_css_class": "", "downs": 0, "top_awarded_type": null, "hide_score": false, "name": "t3
+_mxm3re", "quarantine": false, "link_flair_text_color": "light", "upvote_ratio": 0.97, "author_flair_background_co
+lor": null, "subreddit_type": "public", "ups": 396, "total_awards_received": 8, "media_embed": {}, "author_flair_t
+emplate_id": null, "is_original_content": false, "user_reports": [], "secure_media": null, "is_reddit_media_domain
+": false, "is_meta": false, "category": null, "secure_media_embed": {}, "link_flair_text": "Announcement", "can_mo
+d_post": false, "score": 396, "approved_by": null, "is_created_from_ads_ui": false, "author_premium": true, "thumb
+nail": "", "edited": 1619278864.0, "author_flair_css_class": null, "author_flair_richtext": [], "gildings": {}, "c
+ontent_categories": null, "is_self": true, "mod_note": null, "created": 1619277844.0, "link_flair_type": "text", "
+wls": 6, "removed_by_category": null, "banned_by": null, "author_flair_type": "text", "domain": "self.netflix", "a
+llow_live_comments": true, "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;We are pleased 
+to announce we have affiliated with &lt;a href=\"https://discord.gg/Netflix\"&gt;https://discord.gg/Netflix&lt;/a&
+gt; which will be the subreddit Discord server for the Netflix subreddit! &lt;/p&gt;\n\n&lt;p&gt;Feel free to join
+ the server and talk about everything Netflix related, including shows on Netflix as well :).&lt;/p&gt;\n&lt;/div&
+gt;&lt;!-- SC_ON --&gt;", "likes": null, "suggested_sort": null, "banned_at_utc": null, "view_count": null, "archi
+ved": false, "no_follow": false, "is_crosspostable": false, "pinned": false, "over_18": false, "all_awardings": [{
+"giver_coin_reward": null, "subreddit_id": null, "is_new": false, "days_of_drip_extension": null, "coin_price": 15
+0, "id": "award_f44611f1-b89e-46dc-97fe-892280b13b82", "penny_donate": null, "award_sub_type": "GLOBAL", "coin_rew
+ard": 0, "icon_url": "https://i.redd.it/award_images/t5_22cerq/klvxk1wggfd41_Helpful.png", "days_of_premium": null
+, "tiers_by_required_awardings": null, "resized_icons": [{"url": "https://preview.redd.it/award_images/t5_22cerq/k
+lvxk1wggfd41_Helpful.png?width=16&amp;height=16&amp;auto=webp&amp;v=enabled&amp;s=c670b7d7bc99c03bffde92706ad5ceed
+a12658f3", "width": 16, "height": 16}, {"url": "https://preview.redd.it/award_images/t5_22cerq/klvxk1wggfd41_Helpf
+ul.png?width=32&amp;height=32&amp;auto=webp&amp;v=enabled&amp;s=63a498673bd4a518a031783179a767cc4135d5f5", "width"
+: 32, "height": 32}, {"url": "https://preview.redd.it/award_images/t5_22cerq/klvxk1wggfd41_Helpful.png?width=48&am
+p;height=48&amp;auto=webp&amp;v=enabled&amp;s=e8802df47965bd66370b72ac3cb7639e9eae92ae", "width": 48, "height": 48
+}, {"url": "https://preview.redd.it/award_images/t5_22cerq/klvxk1wggfd41_Helpful.png?width=64&amp;height=64&amp;au
+to=webp&amp;v=enabled&amp;s=fc40ae1c1a18193f190da70a2748d0a48c17a5a9", "width": 64, "height": 64}, {"url": "https:
+//preview.redd.it/award_images/t5_22cerq/klvxk1wggfd41_Helpful.png?width=128&amp;height=128&amp;auto=webp&amp;v=en
+abled&amp;s=77ba4d8e862ca183dd8c09e002fd123a6b2f52f5", "width": 128, "height": 128}], "icon_width": 2048, "static_
+icon_width": 2048, "start_date": null, "is_enabled": true, "awardings_required_to_grant_benefits": null, "descript
+jk1642@ip-10-81-64-40:~$ 
